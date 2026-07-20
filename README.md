@@ -15,9 +15,10 @@ Each problem includes:
 
 ## Progress
 
-| Day | # | Problem | Difficulty | Pattern | Status |
-|---:|---:|---|---|---|---|
-| 1 | 1 | Two Sum | Easy | Hash Map | ✅ Completed |
+| Day | # | Problem | Difficulty | Pattern | Data Structure | Time | Space | Status |
+|---:|---:|---|---|---|---|---|---|---|
+| 1 | 1 | Two Sum | Easy | Hash Map | Dictionary | `O(n)` | `O(n)` | ✅ Completed |
+| 2 | 20 | Valid Parentheses | Easy | Matching Delimiters | Stack | `O(n)` | `O(n)` | ✅ Completed |
 
 ## Repository Structure
 
@@ -42,5 +43,17 @@ Use a dictionary to map each previously visited number to its index. For each va
 calculate `target - value`. If that complement is already in the dictionary, return
 the stored index and current index.
 
+- Time: `O(n)`
+- Space: `O(n)`
+
+## Day 2: Valid Parentheses
+
+Scan the string from left to right. Push opening brackets onto a stack. For each
+closing bracket, pop the most recent opening bracket and verify that the pair
+matches. The string is valid only when every closing bracket matches and the stack
+is empty after the scan.
+
+- Pattern: Matching delimiters
+- Data structure: Stack backed by `[Character]`
 - Time: `O(n)`
 - Space: `O(n)`
