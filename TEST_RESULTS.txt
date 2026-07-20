@@ -1,0 +1,47 @@
+Test Suite 'All tests' started at 2026-07-20 06:34:12.977
+Test Suite 'debug.xctest' started at 2026-07-20 06:34:12.979
+Test Suite 'TwoSumTests' started at 2026-07-20 06:34:12.979
+Test Case 'TwoSumTests.testDuplicateValues' started at 2026-07-20 06:34:12.979
+Test Case 'TwoSumTests.testDuplicateValues' passed (0.001 seconds)
+Test Case 'TwoSumTests.testNegativeValues' started at 2026-07-20 06:34:12.981
+Test Case 'TwoSumTests.testNegativeValues' passed (0.0 seconds)
+Test Case 'TwoSumTests.testNoSolutionReturnsEmptyArray' started at 2026-07-20 06:34:12.981
+Test Case 'TwoSumTests.testNoSolutionReturnsEmptyArray' passed (0.101 seconds)
+Test Case 'TwoSumTests.testPairInMiddle' started at 2026-07-20 06:34:13.082
+Test Case 'TwoSumTests.testPairInMiddle' passed (0.0 seconds)
+Test Case 'TwoSumTests.testStandardExample' started at 2026-07-20 06:34:13.082
+Test Case 'TwoSumTests.testStandardExample' passed (0.0 seconds)
+Test Suite 'TwoSumTests' passed at 2026-07-20 06:34:13.082
+	 Executed 5 tests, with 0 failures (0 unexpected) in 0.103 (0.103) seconds
+Test Suite 'debug.xctest' passed at 2026-07-20 06:34:13.083
+	 Executed 5 tests, with 0 failures (0 unexpected) in 0.103 (0.103) seconds
+Test Suite 'All tests' passed at 2026-07-20 06:34:13.083
+	 Executed 5 tests, with 0 failures (0 unexpected) in 0.103 (0.103) seconds
+◇ Test run started.
+↳ Testing Library Version: 6.2.1 (c9d57c83568b06d)
+↳ Target Platform: x86_64-unknown-linux-gnu
+✔ Test run with 0 tests in 0 suites passed after 0.001 seconds.
+
+Building for debugging...
+[0/13] Write sources
+[2/13] Write swift-version--1BA0962812E73E12.txt
+[4/15] Emitting module Grind75Swift
+[5/15] Compiling Grind75Swift TwoSum.swift
+[6/18] Wrapping AST for Grind75Swift for debugging
+[8/18] Emitting module Grind75SwiftTests
+[9/18] Compiling Grind75SwiftTests TwoSumTests.swift
+[10/19] /mnt/data/Grind75-Swift/.build/x86_64-unknown-linux-gnu/debug/Grind75-SwiftPackageDiscoveredTests.derived/all-discovered-tests.swift
+[11/19] Write sources
+[12/22] Wrapping AST for Grind75SwiftTests for debugging
+[14/22] Compiling Grind75_SwiftPackageDiscoveredTests all-discovered-tests.swift
+[15/22] Compiling Grind75_SwiftPackageDiscoveredTests Grind75SwiftTests.swift
+[16/22] Emitting module Grind75_SwiftPackageDiscoveredTests
+[17/23] /mnt/data/Grind75-Swift/.build/x86_64-unknown-linux-gnu/debug/Grind75-SwiftPackageTests.derived/runner.swift
+[18/23] Write sources
+[19/25] Wrapping AST for Grind75-SwiftPackageDiscoveredTests for debugging
+[21/25] Compiling Grind75_SwiftPackageTests runner.swift
+[22/25] Emitting module Grind75_SwiftPackageTests
+[23/26] Wrapping AST for Grind75-SwiftPackageTests for debugging
+[24/26] Write Objects.LinkFileList
+[25/26] Linking Grind75-SwiftPackageTests.xctest
+Build complete! (8.52s)
