@@ -19,6 +19,7 @@ Each problem includes:
 |---:|---:|---|---|---|---|---|---|---|
 | 1 | 1 | Two Sum | Easy | Hash Map | Dictionary | `O(n)` | `O(n)` | ✅ Completed |
 | 2 | 20 | Valid Parentheses | Easy | Matching Delimiters | Stack | `O(n)` | `O(n)` | ✅ Completed |
+| 3 | 21 | Merge Two Sorted Lists | Easy | Two Pointers | Singly Linked List | `O(m + n)` | `O(1)` | ✅ Completed |
 
 ## Repository Structure
 
@@ -57,3 +58,14 @@ is empty after the scan.
 - Data structure: Stack backed by `[Character]`
 - Time: `O(n)`
 - Space: `O(n)`
+
+## Day 3: Merge Two Sorted Lists
+
+Maintain pointers to the current node in each sorted list and append the smaller
+node to a result tail. A dummy head removes special handling for the first result
+node. When either input ends, attach the other list's remaining sorted suffix.
+
+- Pattern: Two pointers
+- Data structure: Singly linked list with a dummy head
+- Time: `O(m + n)`
+- Auxiliary space: `O(1)`
