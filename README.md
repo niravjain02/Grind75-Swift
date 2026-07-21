@@ -20,6 +20,7 @@ Each problem includes:
 | 1 | 1 | Two Sum | Easy | Hash Map | Dictionary | `O(n)` | `O(n)` | ✅ Completed |
 | 2 | 20 | Valid Parentheses | Easy | Matching Delimiters | Stack | `O(n)` | `O(n)` | ✅ Completed |
 | 3 | 21 | Merge Two Sorted Lists | Easy | Two Pointers | Singly Linked List | `O(m + n)` | `O(1)` | ✅ Completed |
+| 4 | 121 | Best Time to Buy and Sell Stock | Easy | Sliding Minimum | Integer State | `O(n)` | `O(1)` | ✅ Completed |
 
 ## Repository Structure
 
@@ -69,3 +70,14 @@ node. When either input ends, attach the other list's remaining sorted suffix.
 - Data structure: Singly linked list with a dummy head
 - Time: `O(m + n)`
 - Auxiliary space: `O(1)`
+
+## Day 4: Best Time to Buy and Sell Stock
+
+Scan prices once while tracking the lowest price seen so far. At each price,
+calculate the profit from selling today after buying at that earlier minimum and
+keep the largest profit. Returning zero represents choosing not to trade.
+
+- Pattern: Sliding minimum
+- Data structure: Two integer state variables
+- Time: `O(n)`
+- Space: `O(1)`
