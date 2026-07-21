@@ -21,6 +21,7 @@ Each problem includes:
 | 2 | 20 | Valid Parentheses | Easy | Matching Delimiters | Stack | `O(n)` | `O(n)` | ✅ Completed |
 | 3 | 21 | Merge Two Sorted Lists | Easy | Two Pointers | Singly Linked List | `O(m + n)` | `O(1)` | ✅ Completed |
 | 4 | 121 | Best Time to Buy and Sell Stock | Easy | Sliding Minimum | Integer State | `O(n)` | `O(1)` | ✅ Completed |
+| 5 | 125 | Valid Palindrome | Easy | Two Pointers | Filtered Character Array | `O(n)` | `O(n)` | ✅ Completed |
 
 ## Repository Structure
 
@@ -81,3 +82,14 @@ keep the largest profit. Returning zero represents choosing not to trade.
 - Data structure: Two integer state variables
 - Time: `O(n)`
 - Space: `O(1)`
+
+## Day 5: Valid Palindrome
+
+Normalize the string by lowercasing it and retaining only letters and numbers.
+Compare characters from both ends, moving inward until the pointers meet. Any
+mismatch proves that the normalized string is not a palindrome.
+
+- Pattern: Two pointers
+- Data structure: Filtered character array
+- Time: `O(n)`
+- Space: `O(n)`
