@@ -8,7 +8,8 @@
 - [x] Day 4 — LeetCode 121: Best Time to Buy and Sell Stock
 - [x] Day 5 — LeetCode 125: Valid Palindrome
 - [x] Day 6 — LeetCode 226: Invert Binary Tree
+- [x] Day 7 — LeetCode 242: Valid Anagram
 
 ## Next
 
-- [ ] Day 7 — LeetCode 242: Valid Anagram
+- [ ] Day 8 — LeetCode 704: Binary Search

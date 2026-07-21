@@ -23,6 +23,7 @@ Each problem includes:
 | 4 | 121 | Best Time to Buy and Sell Stock | Easy | Sliding Minimum | Integer State | `O(n)` | `O(1)` | ✅ Completed |
 | 5 | 125 | Valid Palindrome | Easy | Two Pointers | Filtered Character Array | `O(n)` | `O(n)` | ✅ Completed |
 | 6 | 226 | Invert Binary Tree | Easy | Depth-First Search | Binary Tree | `O(n)` | `O(h)` | ✅ Completed |
+| 7 | 242 | Valid Anagram | Easy | Frequency Counting | Dictionary | `O(n)` | `O(k)` | ✅ Completed |
 
 ## Repository Structure
 
@@ -105,3 +106,15 @@ reused, so only the recursion stack requires auxiliary storage.
 - Data structure: Binary tree
 - Time: `O(n)`
 - Space: `O(h)` for a tree of height `h`
+
+## Day 7: Valid Anagram
+
+Count every character in the first string with a dictionary. Decrement the
+matching count for each character in the second string, rejecting missing or
+overused characters immediately. Removing zero counts leaves an empty dictionary
+exactly when the strings are anagrams.
+
+- Pattern: Frequency counting
+- Data structure: Dictionary from character to count
+- Time: `O(n)`
+- Space: `O(k)` for `k` distinct characters
