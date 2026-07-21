@@ -22,6 +22,7 @@ Each problem includes:
 | 3 | 21 | Merge Two Sorted Lists | Easy | Two Pointers | Singly Linked List | `O(m + n)` | `O(1)` | ✅ Completed |
 | 4 | 121 | Best Time to Buy and Sell Stock | Easy | Sliding Minimum | Integer State | `O(n)` | `O(1)` | ✅ Completed |
 | 5 | 125 | Valid Palindrome | Easy | Two Pointers | Filtered Character Array | `O(n)` | `O(n)` | ✅ Completed |
+| 6 | 226 | Invert Binary Tree | Easy | Depth-First Search | Binary Tree | `O(n)` | `O(h)` | ✅ Completed |
 
 ## Repository Structure
 
@@ -93,3 +94,14 @@ mismatch proves that the normalized string is not a palindrome.
 - Data structure: Filtered character array
 - Time: `O(n)`
 - Space: `O(n)`
+
+## Day 6: Invert Binary Tree
+
+Visit every node with depth-first search. Recursively invert both subtrees and
+attach them on the opposite sides of the current node. The existing nodes are
+reused, so only the recursion stack requires auxiliary storage.
+
+- Pattern: Depth-first search
+- Data structure: Binary tree
+- Time: `O(n)`
+- Space: `O(h)` for a tree of height `h`

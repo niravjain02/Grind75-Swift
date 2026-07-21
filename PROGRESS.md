@@ -7,7 +7,8 @@
 - [x] Day 3 — LeetCode 21: Merge Two Sorted Lists
 - [x] Day 4 — LeetCode 121: Best Time to Buy and Sell Stock
 - [x] Day 5 — LeetCode 125: Valid Palindrome
+- [x] Day 6 — LeetCode 226: Invert Binary Tree
 
 ## Next
 
-- [ ] Day 6 — LeetCode 226: Invert Binary Tree
+- [ ] Day 7 — LeetCode 242: Valid Anagram
