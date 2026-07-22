@@ -30,6 +30,7 @@ Each problem includes:
 | 11 | 110 | Balanced Binary Tree | Easy | Postorder DFS | Binary Tree | `O(n)` | `O(h)` | ✅ Completed |
 | 12 | 141 | Linked List Cycle | Easy | Fast and Slow Pointers | Singly Linked List | `O(n)` | `O(1)` | ✅ Completed |
 | 13 | 232 | Implement Queue using Stacks | Easy | Lazy Stack Transfer | Two Array-Backed Stacks | Amortized `O(1)` | `O(n)` | ✅ Completed |
+| 14 | 278 | First Bad Version | Easy | Binary Search | Integer Bounds | `O(log n)` | `O(1)` | ✅ Completed |
 
 ## Repository Structure
 
@@ -196,3 +197,15 @@ operations take constant amortized time.
 - Data structure: Two array-backed stacks
 - Time: `O(1)` amortized per operation; a single transfer can take `O(n)`
 - Space: `O(n)`
+
+## Day 14: First Bad Version
+
+Binary-search the monotonic sequence of good versions followed by bad versions.
+When the middle version is bad, keep it as a candidate by moving the right bound
+to it. Otherwise discard it and every earlier version. The bounds meet at the
+first bad version.
+
+- Pattern: Binary search for the first true value
+- Data structure: Two integer bounds
+- Time: `O(log n)`
+- Space: `O(1)`

@@ -15,7 +15,8 @@
 - [x] Day 11 — LeetCode 110: Balanced Binary Tree
 - [x] Day 12 — LeetCode 141: Linked List Cycle
 - [x] Day 13 — LeetCode 232: Implement Queue using Stacks
+- [x] Day 14 — LeetCode 278: First Bad Version
 
 ## Next
 
-- [ ] Day 14 — LeetCode 278: First Bad Version
+- [ ] Day 15 — LeetCode 383: Ransom Note
