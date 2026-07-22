@@ -25,6 +25,7 @@ Each problem includes:
 | 6 | 226 | Invert Binary Tree | Easy | Depth-First Search | Binary Tree | `O(n)` | `O(h)` | ✅ Completed |
 | 7 | 242 | Valid Anagram | Easy | Frequency Counting | Dictionary | `O(n)` | `O(k)` | ✅ Completed |
 | 8 | 704 | Binary Search | Easy | Binary Search | Integer Bounds | `O(log n)` | `O(1)` | ✅ Completed |
+| 9 | 733 | Flood Fill | Easy | Breadth-First Search | Array-Backed Queue | `O(m * n)` | `O(m * n)` | ✅ Completed |
 
 ## Repository Structure
 
@@ -131,3 +132,15 @@ bounds cross.
 - Data structure: Two integer bounds over the array
 - Time: `O(log n)`
 - Space: `O(1)`
+
+## Day 9: Flood Fill
+
+Start at the selected pixel and use breadth-first search to visit every
+four-directionally connected pixel with the same original color. Recolor pixels
+when they enter the queue so each coordinate is processed at most once. If the
+new color already matches the original, return immediately.
+
+- Pattern: Breadth-first search
+- Data structure: Array-backed queue of grid coordinates
+- Time: `O(m * n)`
+- Space: `O(m * n)`
