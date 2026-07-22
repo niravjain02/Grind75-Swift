@@ -29,6 +29,7 @@ Each problem includes:
 | 10 | 235 | Lowest Common Ancestor of a Binary Search Tree | Easy | BST Search | Binary Search Tree | `O(h)` | `O(1)` | ✅ Completed |
 | 11 | 110 | Balanced Binary Tree | Easy | Postorder DFS | Binary Tree | `O(n)` | `O(h)` | ✅ Completed |
 | 12 | 141 | Linked List Cycle | Easy | Fast and Slow Pointers | Singly Linked List | `O(n)` | `O(1)` | ✅ Completed |
+| 13 | 232 | Implement Queue using Stacks | Easy | Lazy Stack Transfer | Two Array-Backed Stacks | Amortized `O(1)` | `O(n)` | ✅ Completed |
 
 ## Repository Structure
 
@@ -183,3 +184,15 @@ not stored values, because different nodes may contain duplicates.
 - Data structure: Singly linked list
 - Time: `O(n)`
 - Space: `O(1)`
+
+## Day 13: Implement Queue using Stacks
+
+Push new elements onto an input stack. For `pop` or `peek`, transfer all elements
+to an output stack only when that stack is empty; reversing their order exposes the
+oldest element at the top. Each element moves between stacks at most once, so queue
+operations take constant amortized time.
+
+- Pattern: Lazy stack transfer
+- Data structure: Two array-backed stacks
+- Time: `O(1)` amortized per operation; a single transfer can take `O(n)`
+- Space: `O(n)`
