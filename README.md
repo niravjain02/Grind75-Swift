@@ -27,6 +27,7 @@ Each problem includes:
 | 8 | 704 | Binary Search | Easy | Binary Search | Integer Bounds | `O(log n)` | `O(1)` | ✅ Completed |
 | 9 | 733 | Flood Fill | Easy | Breadth-First Search | Array-Backed Queue | `O(m * n)` | `O(m * n)` | ✅ Completed |
 | 10 | 235 | Lowest Common Ancestor of a Binary Search Tree | Easy | BST Search | Binary Search Tree | `O(h)` | `O(1)` | ✅ Completed |
+| 11 | 110 | Balanced Binary Tree | Easy | Postorder DFS | Binary Tree | `O(n)` | `O(h)` | ✅ Completed |
 
 ## Repository Structure
 
@@ -157,3 +158,15 @@ lowest common ancestor.
 - Data structure: Binary search tree
 - Time: `O(h)` for a tree of height `h`
 - Space: `O(1)`
+
+## Day 11: Balanced Binary Tree
+
+Compute subtree heights with postorder depth-first search. Each call returns its
+height when balanced or `-1` when an imbalance has already been found. This sentinel
+propagates upward immediately, avoiding repeated height calculations and unnecessary
+work after the answer is known.
+
+- Pattern: Postorder depth-first search
+- Data structure: Binary tree with the recursion stack
+- Time: `O(n)`
+- Space: `O(h)` for a tree of height `h`
