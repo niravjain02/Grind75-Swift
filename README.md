@@ -26,6 +26,7 @@ Each problem includes:
 | 7 | 242 | Valid Anagram | Easy | Frequency Counting | Dictionary | `O(n)` | `O(k)` | ✅ Completed |
 | 8 | 704 | Binary Search | Easy | Binary Search | Integer Bounds | `O(log n)` | `O(1)` | ✅ Completed |
 | 9 | 733 | Flood Fill | Easy | Breadth-First Search | Array-Backed Queue | `O(m * n)` | `O(m * n)` | ✅ Completed |
+| 10 | 235 | Lowest Common Ancestor of a Binary Search Tree | Easy | BST Search | Binary Search Tree | `O(h)` | `O(1)` | ✅ Completed |
 
 ## Repository Structure
 
@@ -144,3 +145,15 @@ new color already matches the original, return immediately.
 - Data structure: Array-backed queue of grid coordinates
 - Time: `O(m * n)`
 - Space: `O(m * n)`
+
+## Day 10: Lowest Common Ancestor of a Binary Search Tree
+
+Use the BST ordering to compare each node with the lower and upper target values.
+When both targets are larger, move right; when both are smaller, move left. The
+first node between the target values is where their paths split, so it is their
+lowest common ancestor.
+
+- Pattern: Binary search tree search
+- Data structure: Binary search tree
+- Time: `O(h)` for a tree of height `h`
+- Space: `O(1)`

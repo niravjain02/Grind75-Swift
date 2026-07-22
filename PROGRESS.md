@@ -11,7 +11,8 @@
 - [x] Day 7 — LeetCode 242: Valid Anagram
 - [x] Day 8 — LeetCode 704: Binary Search
 - [x] Day 9 — LeetCode 733: Flood Fill
+- [x] Day 10 — LeetCode 235: Lowest Common Ancestor of a Binary Search Tree
 
 ## Next
 
-- [ ] Day 10 — LeetCode 235: Lowest Common Ancestor of a Binary Search Tree
+- [ ] Day 11 — LeetCode 110: Balanced Binary Tree
