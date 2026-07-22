@@ -9,7 +9,8 @@
 - [x] Day 5 — LeetCode 125: Valid Palindrome
 - [x] Day 6 — LeetCode 226: Invert Binary Tree
 - [x] Day 7 — LeetCode 242: Valid Anagram
+- [x] Day 8 — LeetCode 704: Binary Search
 
 ## Next
 
-- [ ] Day 8 — LeetCode 704: Binary Search
+- [ ] Day 9 — LeetCode 733: Flood Fill

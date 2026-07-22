@@ -24,6 +24,7 @@ Each problem includes:
 | 5 | 125 | Valid Palindrome | Easy | Two Pointers | Filtered Character Array | `O(n)` | `O(n)` | ✅ Completed |
 | 6 | 226 | Invert Binary Tree | Easy | Depth-First Search | Binary Tree | `O(n)` | `O(h)` | ✅ Completed |
 | 7 | 242 | Valid Anagram | Easy | Frequency Counting | Dictionary | `O(n)` | `O(k)` | ✅ Completed |
+| 8 | 704 | Binary Search | Easy | Binary Search | Integer Bounds | `O(log n)` | `O(1)` | ✅ Completed |
 
 ## Repository Structure
 
@@ -118,3 +119,15 @@ exactly when the strings are anagrams.
 - Data structure: Dictionary from character to count
 - Time: `O(n)`
 - Space: `O(k)` for `k` distinct characters
+
+## Day 8: Binary Search
+
+Keep inclusive left and right bounds around the portion of the sorted array that
+may contain the target. Compare the middle value with the target and discard the
+half that cannot contain it. Return the middle index on a match or `-1` when the
+bounds cross.
+
+- Pattern: Binary search
+- Data structure: Two integer bounds over the array
+- Time: `O(log n)`
+- Space: `O(1)`
