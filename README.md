@@ -28,6 +28,7 @@ Each problem includes:
 | 9 | 733 | Flood Fill | Easy | Breadth-First Search | Array-Backed Queue | `O(m * n)` | `O(m * n)` | ✅ Completed |
 | 10 | 235 | Lowest Common Ancestor of a Binary Search Tree | Easy | BST Search | Binary Search Tree | `O(h)` | `O(1)` | ✅ Completed |
 | 11 | 110 | Balanced Binary Tree | Easy | Postorder DFS | Binary Tree | `O(n)` | `O(h)` | ✅ Completed |
+| 12 | 141 | Linked List Cycle | Easy | Fast and Slow Pointers | Singly Linked List | `O(n)` | `O(1)` | ✅ Completed |
 
 ## Repository Structure
 
@@ -170,3 +171,15 @@ work after the answer is known.
 - Data structure: Binary tree with the recursion stack
 - Time: `O(n)`
 - Space: `O(h)` for a tree of height `h`
+
+## Day 12: Linked List Cycle
+
+Move one pointer one node at a time and another pointer two nodes at a time. If the
+list has a cycle, the faster pointer must eventually catch the slower pointer inside
+it. If the faster pointer reaches the end, the list is acyclic. Compare node identity,
+not stored values, because different nodes may contain duplicates.
+
+- Pattern: Fast and slow pointers (Floyd's cycle detection)
+- Data structure: Singly linked list
+- Time: `O(n)`
+- Space: `O(1)`
