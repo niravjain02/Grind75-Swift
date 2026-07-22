@@ -31,6 +31,7 @@ Each problem includes:
 | 12 | 141 | Linked List Cycle | Easy | Fast and Slow Pointers | Singly Linked List | `O(n)` | `O(1)` | ✅ Completed |
 | 13 | 232 | Implement Queue using Stacks | Easy | Lazy Stack Transfer | Two Array-Backed Stacks | Amortized `O(1)` | `O(n)` | ✅ Completed |
 | 14 | 278 | First Bad Version | Easy | Binary Search | Integer Bounds | `O(log n)` | `O(1)` | ✅ Completed |
+| 15 | 383 | Ransom Note | Easy | Frequency Counting | Fixed-Size Integer Array | `O(m + n)` | `O(1)` | ✅ Completed |
 
 ## Repository Structure
 
@@ -209,3 +210,14 @@ first bad version.
 - Data structure: Two integer bounds
 - Time: `O(log n)`
 - Space: `O(1)`
+
+## Day 15: Ransom Note
+
+Count the magazine's lowercase letters in a fixed 26-slot array. Consume one
+count for each letter in the ransom note and fail immediately if a required
+letter is unavailable. Letter order does not matter, but duplicate counts do.
+
+- Pattern: Frequency counting
+- Data structure: Fixed-size integer array
+- Time: `O(m + n)`
+- Space: `O(1)` because the alphabet size is fixed

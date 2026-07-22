@@ -16,7 +16,8 @@
 - [x] Day 12 — LeetCode 141: Linked List Cycle
 - [x] Day 13 — LeetCode 232: Implement Queue using Stacks
 - [x] Day 14 — LeetCode 278: First Bad Version
+- [x] Day 15 — LeetCode 383: Ransom Note
 
 ## Next
 
-- [ ] Day 15 — LeetCode 383: Ransom Note
+- [ ] Day 16 — LeetCode 70: Climbing Stairs
