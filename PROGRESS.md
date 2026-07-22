@@ -17,7 +17,8 @@
 - [x] Day 13 — LeetCode 232: Implement Queue using Stacks
 - [x] Day 14 — LeetCode 278: First Bad Version
 - [x] Day 15 — LeetCode 383: Ransom Note
+- [x] Day 16 — LeetCode 70: Climbing Stairs
 
 ## Next
 
-- [ ] Day 16 — LeetCode 70: Climbing Stairs
+- [ ] Day 17 — LeetCode 409: Longest Palindrome

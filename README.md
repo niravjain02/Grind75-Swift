@@ -32,6 +32,7 @@ Each problem includes:
 | 13 | 232 | Implement Queue using Stacks | Easy | Lazy Stack Transfer | Two Array-Backed Stacks | Amortized `O(1)` | `O(n)` | ✅ Completed |
 | 14 | 278 | First Bad Version | Easy | Binary Search | Integer Bounds | `O(log n)` | `O(1)` | ✅ Completed |
 | 15 | 383 | Ransom Note | Easy | Frequency Counting | Fixed-Size Integer Array | `O(m + n)` | `O(1)` | ✅ Completed |
+| 16 | 70 | Climbing Stairs | Easy | Dynamic Programming | Two Integer States | `O(n)` | `O(1)` | ✅ Completed |
 
 ## Repository Structure
 
@@ -221,3 +222,14 @@ letter is unavailable. Letter order does not matter, but duplicate counts do.
 - Data structure: Fixed-size integer array
 - Time: `O(m + n)`
 - Space: `O(1)` because the alphabet size is fixed
+
+## Day 16: Climbing Stairs
+
+The number of ways to reach a step is the sum of the ways to reach the previous
+two steps, because the final move must be either one or two steps. Keep only
+those two prior results instead of an entire dynamic-programming array.
+
+- Pattern: Dynamic programming with rolling state
+- Data structure: Two integer state variables
+- Time: `O(n)`
+- Space: `O(1)`
