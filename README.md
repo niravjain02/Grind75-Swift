@@ -33,6 +33,7 @@ Each problem includes:
 | 14 | 278 | First Bad Version | Easy | Binary Search | Integer Bounds | `O(log n)` | `O(1)` | ✅ Completed |
 | 15 | 383 | Ransom Note | Easy | Frequency Counting | Fixed-Size Integer Array | `O(m + n)` | `O(1)` | ✅ Completed |
 | 16 | 70 | Climbing Stairs | Easy | Dynamic Programming | Two Integer States | `O(n)` | `O(1)` | ✅ Completed |
+| 17 | 409 | Longest Palindrome | Easy | Pair Counting | Set | `O(n)` | `O(k)` | ✅ Completed |
 
 ## Repository Structure
 
@@ -233,3 +234,15 @@ those two prior results instead of an entire dynamic-programming array.
 - Data structure: Two integer state variables
 - Time: `O(n)`
 - Space: `O(1)`
+
+## Day 17: Longest Palindrome
+
+Scan the string while keeping a set of characters that currently lack a partner.
+The second occurrence of an unpaired character completes a mirrored pair, so remove
+it from the set and add two to the palindrome length. After all pairs are counted,
+one leftover character may occupy the center.
+
+- Pattern: Pair counting
+- Data structure: Set of unpaired characters
+- Time: `O(n)`
+- Space: `O(k)` for `k` distinct characters
