@@ -35,6 +35,7 @@ Each problem includes:
 | 16 | 70 | Climbing Stairs | Easy | Dynamic Programming | Two Integer States | `O(n)` | `O(1)` | ✅ Completed |
 | 17 | 409 | Longest Palindrome | Easy | Pair Counting | Set | `O(n)` | `O(k)` | ✅ Completed |
 | 18 | 206 | Reverse Linked List | Easy | Iterative Pointer Reversal | Singly Linked List | `O(n)` | `O(1)` | ✅ Completed |
+| 19 | 169 | Majority Element | Easy | Boyer–Moore Majority Vote | Two Integer States | `O(n)` | `O(1)` | ✅ Completed |
 
 ## Repository Structure
 
@@ -258,3 +259,15 @@ the unreversed suffix remains reachable. The final previous node is the new head
 - Data structure: Singly linked list
 - Time: `O(n)`
 - Auxiliary space: `O(1)`
+
+## Day 19: Majority Element
+
+Treat each occurrence of the current candidate as one vote and each different
+value as a cancellation. When the balance reaches zero, the next value becomes
+the candidate. Because the majority appears more often than all other values
+combined, it must be the candidate that survives the complete scan.
+
+- Pattern: Boyer–Moore majority vote
+- Data structure: Candidate and vote-count integer states
+- Time: `O(n)`
+- Space: `O(1)`

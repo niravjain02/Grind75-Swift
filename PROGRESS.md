@@ -20,7 +20,8 @@
 - [x] Day 16 — LeetCode 70: Climbing Stairs
 - [x] Day 17 — LeetCode 409: Longest Palindrome
 - [x] Day 18 — LeetCode 206: Reverse Linked List
+- [x] Day 19 — LeetCode 169: Majority Element
 
 ## Next
 
-- [ ] Day 19 — LeetCode 169: Majority Element
+- [ ] Day 20 — LeetCode 67: Add Binary
