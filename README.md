@@ -34,6 +34,7 @@ Each problem includes:
 | 15 | 383 | Ransom Note | Easy | Frequency Counting | Fixed-Size Integer Array | `O(m + n)` | `O(1)` | ✅ Completed |
 | 16 | 70 | Climbing Stairs | Easy | Dynamic Programming | Two Integer States | `O(n)` | `O(1)` | ✅ Completed |
 | 17 | 409 | Longest Palindrome | Easy | Pair Counting | Set | `O(n)` | `O(k)` | ✅ Completed |
+| 18 | 206 | Reverse Linked List | Easy | Iterative Pointer Reversal | Singly Linked List | `O(n)` | `O(1)` | ✅ Completed |
 
 ## Repository Structure
 
@@ -246,3 +247,14 @@ one leftover character may occupy the center.
 - Data structure: Set of unpaired characters
 - Time: `O(n)`
 - Space: `O(k)` for `k` distinct characters
+
+## Day 18: Reverse Linked List
+
+Walk through the list while tracking the already reversed prefix. Before redirecting
+each node's `next` pointer toward the previous node, save its original successor so
+the unreversed suffix remains reachable. The final previous node is the new head.
+
+- Pattern: Iterative pointer reversal
+- Data structure: Singly linked list
+- Time: `O(n)`
+- Auxiliary space: `O(1)`

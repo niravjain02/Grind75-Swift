@@ -19,7 +19,8 @@
 - [x] Day 15 — LeetCode 383: Ransom Note
 - [x] Day 16 — LeetCode 70: Climbing Stairs
 - [x] Day 17 — LeetCode 409: Longest Palindrome
+- [x] Day 18 — LeetCode 206: Reverse Linked List
 
 ## Next
 
-- [ ] Day 18 — LeetCode 206: Reverse Linked List
+- [ ] Day 19 — LeetCode 169: Majority Element
