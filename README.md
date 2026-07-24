@@ -38,6 +38,7 @@ Each problem includes:
 | 19 | 169 | Majority Element | Easy | Boyer–Moore Majority Vote | Two Integer States | `O(n)` | `O(1)` | ✅ Completed |
 | 20 | 67 | Add Binary | Easy | Right-to-Left Addition | Byte Arrays | `O(max(m, n))` | `O(max(m, n))` | ✅ Completed |
 | 21 | 543 | Diameter of Binary Tree | Easy | Postorder DFS | Binary Tree | `O(n)` | `O(h)` | ✅ Completed |
+| 22 | 876 | Middle of the Linked List | Easy | Fast and Slow Pointers | Singly Linked List | `O(n)` | `O(1)` | ✅ Completed |
 
 ## Repository Structure
 
@@ -297,3 +298,15 @@ Return the larger child height plus one to the parent.
 - Data structure: Binary tree with the recursion stack
 - Time: `O(n)`
 - Space: `O(h)` for a tree of height `h`
+
+## Day 22: Middle of the Linked List
+
+Move a slow pointer one node and a fast pointer two nodes on each iteration. When
+the fast pointer reaches the end, the slow pointer has traveled half as far and
+therefore points to the middle. Starting both pointers at the head naturally
+selects the second middle node when the list length is even.
+
+- Pattern: Fast and slow pointers
+- Data structure: Singly linked list
+- Time: `O(n)`
+- Space: `O(1)`

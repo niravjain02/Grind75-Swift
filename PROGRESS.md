@@ -23,7 +23,8 @@
 - [x] Day 19 — LeetCode 169: Majority Element
 - [x] Day 20 — LeetCode 67: Add Binary
 - [x] Day 21 — LeetCode 543: Diameter of Binary Tree
+- [x] Day 22 — LeetCode 876: Middle of the Linked List
 
 ## Next
 
-- [ ] Day 22 — LeetCode 876: Middle of the Linked List
+- [ ] Day 23 — LeetCode 104: Maximum Depth of Binary Tree
