@@ -22,7 +22,8 @@
 - [x] Day 18 — LeetCode 206: Reverse Linked List
 - [x] Day 19 — LeetCode 169: Majority Element
 - [x] Day 20 — LeetCode 67: Add Binary
+- [x] Day 21 — LeetCode 543: Diameter of Binary Tree
 
 ## Next
 
-- [ ] Day 21 — LeetCode 543: Diameter of Binary Tree
+- [ ] Day 22 — LeetCode 876: Middle of the Linked List

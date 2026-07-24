@@ -37,6 +37,7 @@ Each problem includes:
 | 18 | 206 | Reverse Linked List | Easy | Iterative Pointer Reversal | Singly Linked List | `O(n)` | `O(1)` | ✅ Completed |
 | 19 | 169 | Majority Element | Easy | Boyer–Moore Majority Vote | Two Integer States | `O(n)` | `O(1)` | ✅ Completed |
 | 20 | 67 | Add Binary | Easy | Right-to-Left Addition | Byte Arrays | `O(max(m, n))` | `O(max(m, n))` | ✅ Completed |
+| 21 | 543 | Diameter of Binary Tree | Easy | Postorder DFS | Binary Tree | `O(n)` | `O(h)` | ✅ Completed |
 
 ## Repository Structure
 
@@ -284,3 +285,15 @@ converting long binary inputs to a fixed-width integer.
 - Data structure: UTF-8 byte arrays
 - Time: `O(max(m, n))`
 - Space: `O(max(m, n))` for the returned sum
+
+## Day 21: Diameter of Binary Tree
+
+Use postorder depth-first search to compute the height of each subtree. At every
+node, the deepest path passing through it contains `leftHeight + rightHeight`
+edges; compare that candidate with the best diameter seen anywhere in the tree.
+Return the larger child height plus one to the parent.
+
+- Pattern: Postorder depth-first search
+- Data structure: Binary tree with the recursion stack
+- Time: `O(n)`
+- Space: `O(h)` for a tree of height `h`
