@@ -36,6 +36,7 @@ Each problem includes:
 | 17 | 409 | Longest Palindrome | Easy | Pair Counting | Set | `O(n)` | `O(k)` | ✅ Completed |
 | 18 | 206 | Reverse Linked List | Easy | Iterative Pointer Reversal | Singly Linked List | `O(n)` | `O(1)` | ✅ Completed |
 | 19 | 169 | Majority Element | Easy | Boyer–Moore Majority Vote | Two Integer States | `O(n)` | `O(1)` | ✅ Completed |
+| 20 | 67 | Add Binary | Easy | Right-to-Left Addition | Byte Arrays | `O(max(m, n))` | `O(max(m, n))` | ✅ Completed |
 
 ## Repository Structure
 
@@ -271,3 +272,15 @@ combined, it must be the candidate that survives the complete scan.
 - Data structure: Candidate and vote-count integer states
 - Time: `O(n)`
 - Space: `O(1)`
+
+## Day 20: Add Binary
+
+Scan both binary strings from right to left, adding the current digits and a carry.
+Append each result bit to a byte array in reverse order, then reverse it once to
+build the final string. Processing the digits directly avoids overflow from
+converting long binary inputs to a fixed-width integer.
+
+- Pattern: Right-to-left addition
+- Data structure: UTF-8 byte arrays
+- Time: `O(max(m, n))`
+- Space: `O(max(m, n))` for the returned sum

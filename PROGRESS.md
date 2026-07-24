@@ -21,7 +21,8 @@
 - [x] Day 17 — LeetCode 409: Longest Palindrome
 - [x] Day 18 — LeetCode 206: Reverse Linked List
 - [x] Day 19 — LeetCode 169: Majority Element
+- [x] Day 20 — LeetCode 67: Add Binary
 
 ## Next
 
-- [ ] Day 20 — LeetCode 67: Add Binary
+- [ ] Day 21 — LeetCode 543: Diameter of Binary Tree
