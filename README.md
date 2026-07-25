@@ -41,6 +41,7 @@ Each problem includes:
 | 22 | 876 | Middle of the Linked List | Easy | Fast and Slow Pointers | Singly Linked List | `O(n)` | `O(1)` | ✅ Completed |
 | 23 | 104 | Maximum Depth of Binary Tree | Easy | Depth-First Search | Binary Tree | `O(n)` | `O(h)` | ✅ Completed |
 | 24 | 217 | Contains Duplicate | Easy | Membership Tracking | Set | `O(n)` | `O(n)` | ✅ Completed |
+| 25 | 53 | Maximum Subarray | Medium | Kadane's Algorithm | Two Integer States | `O(n)` | `O(1)` | ✅ Completed |
 
 ## Repository Structure
 
@@ -334,3 +335,14 @@ allows an immediate return without scanning the remaining values.
 - Data structure: Set of integers
 - Time: `O(n)` average
 - Space: `O(n)`
+
+## Day 25: Maximum Subarray
+
+For each number, choose whether to extend the previous contiguous subarray or
+start a new subarray at the current position. Track both the best sum ending at
+the current position and the best sum found anywhere, which is Kadane's algorithm.
+
+- Pattern: Dynamic programming (Kadane's algorithm)
+- Data structure: Two integer state variables
+- Time: `O(n)`
+- Space: `O(1)`

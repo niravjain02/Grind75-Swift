@@ -26,7 +26,8 @@
 - [x] Day 22 — LeetCode 876: Middle of the Linked List
 - [x] Day 23 — LeetCode 104: Maximum Depth of Binary Tree
 - [x] Day 24 — LeetCode 217: Contains Duplicate
+- [x] Day 25 — LeetCode 53: Maximum Subarray
 
 ## Next
 
-- [ ] Day 25 — LeetCode 53: Maximum Subarray
+- [ ] Day 26 — LeetCode 57: Insert Interval
