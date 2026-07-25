@@ -43,6 +43,7 @@ Each problem includes:
 | 24 | 217 | Contains Duplicate | Easy | Membership Tracking | Set | `O(n)` | `O(n)` | ✅ Completed |
 | 25 | 53 | Maximum Subarray | Medium | Kadane's Algorithm | Two Integer States | `O(n)` | `O(1)` | ✅ Completed |
 | 26 | 57 | Insert Interval | Medium | Three-Phase Linear Scan | Interval Array | `O(n)` | `O(n)` | ✅ Completed |
+| 27 | 542 | 01 Matrix | Medium | Multi-Source Breadth-First Search | Array-Backed Queue | `O(m * n)` | `O(m * n)` | ✅ Completed |
 
 ## Repository Structure
 
@@ -359,3 +360,15 @@ intervals. Treat touching endpoints as overlapping.
 - Data structure: Array of two-integer intervals
 - Time: `O(n)`
 - Space: `O(n)` for the returned intervals
+
+## Day 27: 01 Matrix
+
+Start breadth-first search from every zero simultaneously. Each zero has distance
+zero; when BFS first reaches an unvisited neighbor, assign one more than the
+current distance. Because BFS expands in distance order, that first assignment
+is the shortest path to any zero.
+
+- Pattern: Multi-source breadth-first search
+- Data structure: Array-backed queue of matrix coordinates
+- Time: `O(m * n)`
+- Space: `O(m * n)` for the result and queue
