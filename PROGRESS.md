@@ -24,7 +24,8 @@
 - [x] Day 20 — LeetCode 67: Add Binary
 - [x] Day 21 — LeetCode 543: Diameter of Binary Tree
 - [x] Day 22 — LeetCode 876: Middle of the Linked List
+- [x] Day 23 — LeetCode 104: Maximum Depth of Binary Tree
 
 ## Next
 
-- [ ] Day 23 — LeetCode 104: Maximum Depth of Binary Tree
+- [ ] Day 24 — LeetCode 217: Contains Duplicate

@@ -39,6 +39,7 @@ Each problem includes:
 | 20 | 67 | Add Binary | Easy | Right-to-Left Addition | Byte Arrays | `O(max(m, n))` | `O(max(m, n))` | ✅ Completed |
 | 21 | 543 | Diameter of Binary Tree | Easy | Postorder DFS | Binary Tree | `O(n)` | `O(h)` | ✅ Completed |
 | 22 | 876 | Middle of the Linked List | Easy | Fast and Slow Pointers | Singly Linked List | `O(n)` | `O(1)` | ✅ Completed |
+| 23 | 104 | Maximum Depth of Binary Tree | Easy | Depth-First Search | Binary Tree | `O(n)` | `O(h)` | ✅ Completed |
 
 ## Repository Structure
 
@@ -310,3 +311,14 @@ selects the second middle node when the list length is even.
 - Data structure: Singly linked list
 - Time: `O(n)`
 - Space: `O(1)`
+
+## Day 23: Maximum Depth of Binary Tree
+
+Recursively calculate the maximum depth of the left and right subtrees. An empty
+subtree contributes zero, while a nonempty node contributes one plus the deeper
+child depth. The result is the number of nodes on the longest root-to-leaf path.
+
+- Pattern: Depth-first search
+- Data structure: Binary tree with the recursion stack
+- Time: `O(n)`
+- Space: `O(h)` for a tree of height `h`
