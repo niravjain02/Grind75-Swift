@@ -30,7 +30,8 @@
 - [x] Day 26 — LeetCode 57: Insert Interval
 - [x] Day 27 — LeetCode 542: 01 Matrix
 - [x] Day 28 — LeetCode 973: K Closest Points to Origin
+- [x] Day 29 — LeetCode 3: Longest Substring Without Repeating Characters
 
 ## Next
 
-- [ ] Day 29 — LeetCode 3: Longest Substring Without Repeating Characters
+- [ ] Day 30 — LeetCode 15: 3Sum

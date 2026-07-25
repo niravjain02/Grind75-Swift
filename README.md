@@ -45,6 +45,7 @@ Each problem includes:
 | 26 | 57 | Insert Interval | Medium | Three-Phase Linear Scan | Interval Array | `O(n)` | `O(n)` | ✅ Completed |
 | 27 | 542 | 01 Matrix | Medium | Multi-Source Breadth-First Search | Array-Backed Queue | `O(m * n)` | `O(m * n)` | ✅ Completed |
 | 28 | 973 | K Closest Points to Origin | Medium | Bounded Max-Heap | Array-Backed Binary Heap | `O(n log k)` | `O(k)` | ✅ Completed |
+| 29 | 3 | Longest Substring Without Repeating Characters | Medium | Sliding Window | Character-to-Index Dictionary | `O(n)` | `O(k)` | ✅ Completed |
 
 ## Repository Structure
 
@@ -385,3 +386,14 @@ distances while avoiding square roots.
 - Data structure: Array-backed binary heap of points
 - Time: `O(n log k)`
 - Space: `O(k)`
+
+## Day 29: Longest Substring Without Repeating Characters
+
+Maintain a sliding window whose characters are unique. Store each character's
+most recent index; when a repeated character lies inside the current window,
+move the window start just after that occurrence. The start never moves backward.
+
+- Pattern: Sliding window
+- Data structure: Dictionary from character to most recent index
+- Time: `O(n)`
+- Space: `O(k)` for `k` distinct characters
