@@ -42,6 +42,7 @@ Each problem includes:
 | 23 | 104 | Maximum Depth of Binary Tree | Easy | Depth-First Search | Binary Tree | `O(n)` | `O(h)` | ✅ Completed |
 | 24 | 217 | Contains Duplicate | Easy | Membership Tracking | Set | `O(n)` | `O(n)` | ✅ Completed |
 | 25 | 53 | Maximum Subarray | Medium | Kadane's Algorithm | Two Integer States | `O(n)` | `O(1)` | ✅ Completed |
+| 26 | 57 | Insert Interval | Medium | Three-Phase Linear Scan | Interval Array | `O(n)` | `O(n)` | ✅ Completed |
 
 ## Repository Structure
 
@@ -346,3 +347,15 @@ the current position and the best sum found anywhere, which is Kadane's algorith
 - Data structure: Two integer state variables
 - Time: `O(n)`
 - Space: `O(1)`
+
+## Day 26: Insert Interval
+
+Use the existing sort order to process intervals in three groups. First append
+intervals strictly before the new interval, then merge every overlapping interval
+by expanding the new interval's endpoints, and finally append the remaining
+intervals. Treat touching endpoints as overlapping.
+
+- Pattern: Three-phase linear scan
+- Data structure: Array of two-integer intervals
+- Time: `O(n)`
+- Space: `O(n)` for the returned intervals

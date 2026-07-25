@@ -27,7 +27,8 @@
 - [x] Day 23 — LeetCode 104: Maximum Depth of Binary Tree
 - [x] Day 24 — LeetCode 217: Contains Duplicate
 - [x] Day 25 — LeetCode 53: Maximum Subarray
+- [x] Day 26 — LeetCode 57: Insert Interval
 
 ## Next
 
-- [ ] Day 26 — LeetCode 57: Insert Interval
+- [ ] Day 27 — LeetCode 542: 01 Matrix
