@@ -44,6 +44,7 @@ Each problem includes:
 | 25 | 53 | Maximum Subarray | Medium | Kadane's Algorithm | Two Integer States | `O(n)` | `O(1)` | ✅ Completed |
 | 26 | 57 | Insert Interval | Medium | Three-Phase Linear Scan | Interval Array | `O(n)` | `O(n)` | ✅ Completed |
 | 27 | 542 | 01 Matrix | Medium | Multi-Source Breadth-First Search | Array-Backed Queue | `O(m * n)` | `O(m * n)` | ✅ Completed |
+| 28 | 973 | K Closest Points to Origin | Medium | Bounded Max-Heap | Array-Backed Binary Heap | `O(n log k)` | `O(k)` | ✅ Completed |
 
 ## Repository Structure
 
@@ -372,3 +373,15 @@ is the shortest path to any zero.
 - Data structure: Array-backed queue of matrix coordinates
 - Time: `O(m * n)`
 - Space: `O(m * n)` for the result and queue
+
+## Day 28: K Closest Points to Origin
+
+Maintain a max-heap containing at most `k` points, ordered by squared distance
+from the origin. After the heap fills, replace its farthest point whenever a
+closer point appears. Squared distances preserve the same ordering as Euclidean
+distances while avoiding square roots.
+
+- Pattern: Bounded max-heap
+- Data structure: Array-backed binary heap of points
+- Time: `O(n log k)`
+- Space: `O(k)`
