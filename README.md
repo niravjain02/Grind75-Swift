@@ -47,6 +47,7 @@ Each problem includes:
 | 28 | 973 | K Closest Points to Origin | Medium | Bounded Max-Heap | Array-Backed Binary Heap | `O(n log k)` | `O(k)` | ✅ Completed |
 | 29 | 3 | Longest Substring Without Repeating Characters | Medium | Sliding Window | Character-to-Index Dictionary | `O(n)` | `O(k)` | ✅ Completed |
 | 30 | 15 | 3Sum | Medium | Sorting and Two Pointers | Sorted Integer Array | `O(n²)` | `O(n)` | ✅ Completed |
+| 31 | 102 | Binary Tree Level Order Traversal | Medium | Breadth-First Search | Array-Backed Queue | `O(n)` | `O(n)` | ✅ Completed |
 
 ## Repository Structure
 
@@ -409,3 +410,14 @@ values at every pointer position so each value triplet appears only once.
 - Data structure: Sorted integer array
 - Time: `O(n²)`
 - Space: `O(n)` for Swift's sorted copy, excluding output
+
+## Day 31: Binary Tree Level Order Traversal
+
+Traverse the tree breadth-first with a queue. Capture the queue's current end
+before processing a level so that children appended during that pass belong to
+the next level. A moving head index avoids the linear cost of `removeFirst()`.
+
+- Pattern: Breadth-first search
+- Data structure: Array-backed queue of tree nodes
+- Time: `O(n)`
+- Space: `O(n)`

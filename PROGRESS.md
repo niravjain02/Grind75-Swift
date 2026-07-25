@@ -32,7 +32,8 @@
 - [x] Day 28 — LeetCode 973: K Closest Points to Origin
 - [x] Day 29 — LeetCode 3: Longest Substring Without Repeating Characters
 - [x] Day 30 — LeetCode 15: 3Sum
+- [x] Day 31 — LeetCode 102: Binary Tree Level Order Traversal
 
 ## Next
 
-- [ ] Day 31 — LeetCode 102: Binary Tree Level Order Traversal
+- [ ] Day 32 — LeetCode 133: Clone Graph
