@@ -31,7 +31,8 @@
 - [x] Day 27 — LeetCode 542: 01 Matrix
 - [x] Day 28 — LeetCode 973: K Closest Points to Origin
 - [x] Day 29 — LeetCode 3: Longest Substring Without Repeating Characters
+- [x] Day 30 — LeetCode 15: 3Sum
 
 ## Next
 
-- [ ] Day 30 — LeetCode 15: 3Sum
+- [ ] Day 31 — LeetCode 102: Binary Tree Level Order Traversal

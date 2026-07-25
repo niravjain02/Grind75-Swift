@@ -46,6 +46,7 @@ Each problem includes:
 | 27 | 542 | 01 Matrix | Medium | Multi-Source Breadth-First Search | Array-Backed Queue | `O(m * n)` | `O(m * n)` | ✅ Completed |
 | 28 | 973 | K Closest Points to Origin | Medium | Bounded Max-Heap | Array-Backed Binary Heap | `O(n log k)` | `O(k)` | ✅ Completed |
 | 29 | 3 | Longest Substring Without Repeating Characters | Medium | Sliding Window | Character-to-Index Dictionary | `O(n)` | `O(k)` | ✅ Completed |
+| 30 | 15 | 3Sum | Medium | Sorting and Two Pointers | Sorted Integer Array | `O(n²)` | `O(n)` | ✅ Completed |
 
 ## Repository Structure
 
@@ -397,3 +398,14 @@ move the window start just after that occurrence. The start never moves backward
 - Data structure: Dictionary from character to most recent index
 - Time: `O(n)`
 - Space: `O(k)` for `k` distinct characters
+
+## Day 30: 3Sum
+
+Sort the numbers, fix one value, and move two pointers through the remaining
+range according to whether the current sum is too small or too large. Skip equal
+values at every pointer position so each value triplet appears only once.
+
+- Pattern: Sorting and two pointers
+- Data structure: Sorted integer array
+- Time: `O(n²)`
+- Space: `O(n)` for Swift's sorted copy, excluding output
