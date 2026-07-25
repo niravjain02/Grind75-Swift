@@ -40,6 +40,7 @@ Each problem includes:
 | 21 | 543 | Diameter of Binary Tree | Easy | Postorder DFS | Binary Tree | `O(n)` | `O(h)` | ✅ Completed |
 | 22 | 876 | Middle of the Linked List | Easy | Fast and Slow Pointers | Singly Linked List | `O(n)` | `O(1)` | ✅ Completed |
 | 23 | 104 | Maximum Depth of Binary Tree | Easy | Depth-First Search | Binary Tree | `O(n)` | `O(h)` | ✅ Completed |
+| 24 | 217 | Contains Duplicate | Easy | Membership Tracking | Set | `O(n)` | `O(n)` | ✅ Completed |
 
 ## Repository Structure
 
@@ -322,3 +323,14 @@ child depth. The result is the number of nodes on the longest root-to-leaf path.
 - Data structure: Binary tree with the recursion stack
 - Time: `O(n)`
 - Space: `O(h)` for a tree of height `h`
+
+## Day 24: Contains Duplicate
+
+Scan the array while inserting each number into a set. Set insertion reports
+whether the value was new, so the first failed insertion proves a duplicate and
+allows an immediate return without scanning the remaining values.
+
+- Pattern: Membership tracking
+- Data structure: Set of integers
+- Time: `O(n)` average
+- Space: `O(n)`
