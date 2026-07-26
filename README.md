@@ -50,6 +50,7 @@ Each problem includes:
 | 31 | 102 | Binary Tree Level Order Traversal | Medium | Breadth-First Search | Array-Backed Queue | `O(n)` | `O(n)` | ✅ Completed |
 | 32 | 133 | Clone Graph | Medium | Breadth-First Search | Identity-to-Clone Dictionary | `O(V + E)` | `O(V)` | ✅ Completed |
 | 33 | 150 | Evaluate Reverse Polish Notation | Medium | Postfix Evaluation | Array-Backed Stack | `O(n)` | `O(n)` | ✅ Completed |
+| 34 | 207 | Course Schedule | Medium | Topological Sort | Adjacency Lists and Indegree Array | `O(V + E)` | `O(V + E)` | ✅ Completed |
 
 ## Repository Structure
 
@@ -448,3 +449,16 @@ value on the stack.
 - Data structure: Array-backed integer stack
 - Time: `O(n)`
 - Space: `O(n)`
+
+## Day 34: Course Schedule
+
+Build directed edges from each prerequisite to the courses that depend on it and
+count every course's incoming edges. Enqueue all courses with no remaining
+prerequisites, then repeatedly complete one and decrement its dependents'
+indegrees. Completing fewer than all courses means a directed cycle blocked the
+remainder.
+
+- Pattern: Topological sort (Kahn's algorithm)
+- Data structure: Adjacency lists, indegree array, and array-backed queue
+- Time: `O(V + E)`
+- Space: `O(V + E)`

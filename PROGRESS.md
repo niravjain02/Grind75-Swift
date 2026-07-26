@@ -35,7 +35,8 @@
 - [x] Day 31 — LeetCode 102: Binary Tree Level Order Traversal
 - [x] Day 32 — LeetCode 133: Clone Graph
 - [x] Day 33 — LeetCode 150: Evaluate Reverse Polish Notation
+- [x] Day 34 — LeetCode 207: Course Schedule
 
 ## Next
 
-- [ ] Day 34 — LeetCode 207: Course Schedule
+- [ ] Day 35 — LeetCode 208: Implement Trie (Prefix Tree)
