@@ -48,6 +48,7 @@ Each problem includes:
 | 29 | 3 | Longest Substring Without Repeating Characters | Medium | Sliding Window | Character-to-Index Dictionary | `O(n)` | `O(k)` | ✅ Completed |
 | 30 | 15 | 3Sum | Medium | Sorting and Two Pointers | Sorted Integer Array | `O(n²)` | `O(n)` | ✅ Completed |
 | 31 | 102 | Binary Tree Level Order Traversal | Medium | Breadth-First Search | Array-Backed Queue | `O(n)` | `O(n)` | ✅ Completed |
+| 32 | 133 | Clone Graph | Medium | Breadth-First Search | Identity-to-Clone Dictionary | `O(V + E)` | `O(V)` | ✅ Completed |
 
 ## Repository Structure
 
@@ -421,3 +422,16 @@ the next level. A moving head index avoids the linear cost of `removeFirst()`.
 - Data structure: Array-backed queue of tree nodes
 - Time: `O(n)`
 - Space: `O(n)`
+
+## Day 32: Clone Graph
+
+Traverse the connected graph breadth-first while mapping each original node's
+identity to exactly one cloned node. Create a neighbor's clone the first time it
+is encountered, enqueue that original for later processing, and append the
+mapped clone for every edge. Identity keys correctly distinguish nodes even
+when values are duplicated.
+
+- Pattern: Breadth-first search
+- Data structure: Dictionary from original node identity to cloned node
+- Time: `O(V + E)`
+- Space: `O(V)`

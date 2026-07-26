@@ -33,7 +33,8 @@
 - [x] Day 29 — LeetCode 3: Longest Substring Without Repeating Characters
 - [x] Day 30 — LeetCode 15: 3Sum
 - [x] Day 31 — LeetCode 102: Binary Tree Level Order Traversal
+- [x] Day 32 — LeetCode 133: Clone Graph
 
 ## Next
 
-- [ ] Day 32 — LeetCode 133: Clone Graph
+- [ ] Day 33 — LeetCode 150: Evaluate Reverse Polish Notation
