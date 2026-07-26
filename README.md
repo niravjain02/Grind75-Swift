@@ -49,6 +49,7 @@ Each problem includes:
 | 30 | 15 | 3Sum | Medium | Sorting and Two Pointers | Sorted Integer Array | `O(n²)` | `O(n)` | ✅ Completed |
 | 31 | 102 | Binary Tree Level Order Traversal | Medium | Breadth-First Search | Array-Backed Queue | `O(n)` | `O(n)` | ✅ Completed |
 | 32 | 133 | Clone Graph | Medium | Breadth-First Search | Identity-to-Clone Dictionary | `O(V + E)` | `O(V)` | ✅ Completed |
+| 33 | 150 | Evaluate Reverse Polish Notation | Medium | Postfix Evaluation | Array-Backed Stack | `O(n)` | `O(n)` | ✅ Completed |
 
 ## Repository Structure
 
@@ -435,3 +436,15 @@ when values are duplicated.
 - Data structure: Dictionary from original node identity to cloned node
 - Time: `O(V + E)`
 - Space: `O(V)`
+
+## Day 33: Evaluate Reverse Polish Notation
+
+Scan the tokens from left to right. Push every number onto an operand stack. For
+an operator, pop the right operand first and the left operand second, apply the
+operation, and push its result. A valid postfix expression leaves exactly one
+value on the stack.
+
+- Pattern: Postfix expression evaluation
+- Data structure: Array-backed integer stack
+- Time: `O(n)`
+- Space: `O(n)`

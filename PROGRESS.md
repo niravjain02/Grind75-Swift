@@ -34,7 +34,8 @@
 - [x] Day 30 — LeetCode 15: 3Sum
 - [x] Day 31 — LeetCode 102: Binary Tree Level Order Traversal
 - [x] Day 32 — LeetCode 133: Clone Graph
+- [x] Day 33 — LeetCode 150: Evaluate Reverse Polish Notation
 
 ## Next
 
-- [ ] Day 33 — LeetCode 150: Evaluate Reverse Polish Notation
+- [ ] Day 34 — LeetCode 207: Course Schedule
