@@ -55,6 +55,7 @@ Each problem includes:
 | 36 | 322 | Coin Change | Medium | Bottom-Up Dynamic Programming | Minimum-Count Array | `O(amount * c)` | `O(amount)` | ✅ Completed |
 | 37 | 238 | Product of Array Except Self | Medium | Prefix and Suffix Products | Output Array and Two Integer States | `O(n)` | `O(1)` auxiliary | ✅ Completed |
 | 38 | 155 | Min Stack | Medium | Stack with Running Minimum | Array of Value-Minimum Pairs | `O(1)` per operation | `O(n)` | ✅ Completed |
+| 39 | 98 | Validate Binary Search Tree | Medium | DFS with Bounds | Binary Tree and Recursion Stack | `O(n)` | `O(h)` | ✅ Completed |
 
 ## Repository Structure
 
@@ -512,3 +513,14 @@ the minimum recorded for the preceding depth. No secondary scan is required.
 - Data structure: Array-backed stack of value-minimum pairs
 - Time: `O(1)` for every operation
 - Space: `O(n)`
+
+## Day 39: Validate Binary Search Tree
+
+Carry the valid lower and upper bounds down the tree. Every node must be strictly
+between all bounds inherited from its ancestors, not merely ordered relative to
+its parent. Optional bounds safely support `Int.min` and `Int.max` node values.
+
+- Pattern: Depth-first search with bounds
+- Data structure: Binary tree with the recursion stack
+- Time: `O(n)`
+- Space: `O(h)` for a tree of height `h`

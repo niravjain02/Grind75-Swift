@@ -40,7 +40,8 @@
 - [x] Day 36 — LeetCode 322: Coin Change
 - [x] Day 37 — LeetCode 238: Product of Array Except Self
 - [x] Day 38 — LeetCode 155: Min Stack
+- [x] Day 39 — LeetCode 98: Validate Binary Search Tree
 
 ## Next
 
-- [ ] Day 39 — LeetCode 98: Validate Binary Search Tree
+- [ ] Day 40 — LeetCode 200: Number of Islands
