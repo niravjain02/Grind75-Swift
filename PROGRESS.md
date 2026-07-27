@@ -39,7 +39,8 @@
 - [x] Day 35 — LeetCode 208: Implement Trie (Prefix Tree)
 - [x] Day 36 — LeetCode 322: Coin Change
 - [x] Day 37 — LeetCode 238: Product of Array Except Self
+- [x] Day 38 — LeetCode 155: Min Stack
 
 ## Next
 
-- [ ] Day 38 — LeetCode 155: Min Stack
+- [ ] Day 39 — LeetCode 98: Validate Binary Search Tree

@@ -54,6 +54,7 @@ Each problem includes:
 | 35 | 208 | Implement Trie (Prefix Tree) | Medium | Prefix Tree Traversal | Character-to-Node Dictionaries | `O(n)` per operation | `O(n)` insertion, `O(1)` search | ✅ Completed |
 | 36 | 322 | Coin Change | Medium | Bottom-Up Dynamic Programming | Minimum-Count Array | `O(amount * c)` | `O(amount)` | ✅ Completed |
 | 37 | 238 | Product of Array Except Self | Medium | Prefix and Suffix Products | Output Array and Two Integer States | `O(n)` | `O(1)` auxiliary | ✅ Completed |
+| 38 | 155 | Min Stack | Medium | Stack with Running Minimum | Array of Value-Minimum Pairs | `O(1)` per operation | `O(n)` | ✅ Completed |
 
 ## Repository Structure
 
@@ -500,3 +501,14 @@ everything to its right. This avoids division and naturally handles zero values.
 - Data structure: Output array plus prefix and suffix integer states
 - Time: `O(n)`
 - Space: `O(1)` auxiliary, excluding the returned array
+
+## Day 38: Min Stack
+
+Store the minimum at every stack depth alongside the inserted value. Pushing a
+value compares it with the previous minimum, and popping automatically restores
+the minimum recorded for the preceding depth. No secondary scan is required.
+
+- Pattern: Stack with running aggregate
+- Data structure: Array-backed stack of value-minimum pairs
+- Time: `O(1)` for every operation
+- Space: `O(n)`
