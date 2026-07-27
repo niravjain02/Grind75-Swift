@@ -56,6 +56,7 @@ Each problem includes:
 | 37 | 238 | Product of Array Except Self | Medium | Prefix and Suffix Products | Output Array and Two Integer States | `O(n)` | `O(1)` auxiliary | ✅ Completed |
 | 38 | 155 | Min Stack | Medium | Stack with Running Minimum | Array of Value-Minimum Pairs | `O(1)` per operation | `O(n)` | ✅ Completed |
 | 39 | 98 | Validate Binary Search Tree | Medium | DFS with Bounds | Binary Tree and Recursion Stack | `O(n)` | `O(h)` | ✅ Completed |
+| 40 | 200 | Number of Islands | Medium | Iterative Depth-First Search | Mutable Grid Copy and Stack | `O(m * n)` | `O(m * n)` | ✅ Completed |
 
 ## Repository Structure
 
@@ -524,3 +525,14 @@ its parent. Optional bounds safely support `Int.min` and `Int.max` node values.
 - Data structure: Binary tree with the recursion stack
 - Time: `O(n)`
 - Space: `O(h)` for a tree of height `h`
+
+## Day 40: Number of Islands
+
+Scan every grid cell. When unvisited land is found, count one island and use an
+iterative depth-first search to mark its entire four-directionally connected
+component as water. Mark cells when adding them to the stack to avoid duplicates.
+
+- Pattern: Connected-component traversal
+- Data structure: Mutable grid copy and array-backed stack
+- Time: `O(m * n)`
+- Space: `O(m * n)`

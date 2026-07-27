@@ -41,7 +41,8 @@
 - [x] Day 37 — LeetCode 238: Product of Array Except Self
 - [x] Day 38 — LeetCode 155: Min Stack
 - [x] Day 39 — LeetCode 98: Validate Binary Search Tree
+- [x] Day 40 — LeetCode 200: Number of Islands
 
 ## Next
 
-- [ ] Day 40 — LeetCode 200: Number of Islands
+- [ ] Day 41 — LeetCode 994: Rotting Oranges
