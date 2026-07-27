@@ -38,7 +38,8 @@
 - [x] Day 34 — LeetCode 207: Course Schedule
 - [x] Day 35 — LeetCode 208: Implement Trie (Prefix Tree)
 - [x] Day 36 — LeetCode 322: Coin Change
+- [x] Day 37 — LeetCode 238: Product of Array Except Self
 
 ## Next
 
-- [ ] Day 37 — LeetCode 238: Product of Array Except Self
+- [ ] Day 38 — LeetCode 155: Min Stack

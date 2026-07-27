@@ -53,6 +53,7 @@ Each problem includes:
 | 34 | 207 | Course Schedule | Medium | Topological Sort | Adjacency Lists and Indegree Array | `O(V + E)` | `O(V + E)` | ✅ Completed |
 | 35 | 208 | Implement Trie (Prefix Tree) | Medium | Prefix Tree Traversal | Character-to-Node Dictionaries | `O(n)` per operation | `O(n)` insertion, `O(1)` search | ✅ Completed |
 | 36 | 322 | Coin Change | Medium | Bottom-Up Dynamic Programming | Minimum-Count Array | `O(amount * c)` | `O(amount)` | ✅ Completed |
+| 37 | 238 | Product of Array Except Self | Medium | Prefix and Suffix Products | Output Array and Two Integer States | `O(n)` | `O(1)` auxiliary | ✅ Completed |
 
 ## Repository Structure
 
@@ -488,3 +489,14 @@ formed.
 - Data structure: Array of minimum coin counts
 - Time: `O(amount * c)` for `c` coin denominations
 - Space: `O(amount)`
+
+## Day 37: Product of Array Except Self
+
+Write the product of all values to the left of each index into the output array.
+Then scan from right to left, multiplying each output value by the product of
+everything to its right. This avoids division and naturally handles zero values.
+
+- Pattern: Prefix and suffix products
+- Data structure: Output array plus prefix and suffix integer states
+- Time: `O(n)`
+- Space: `O(1)` auxiliary, excluding the returned array
