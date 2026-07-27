@@ -36,7 +36,8 @@
 - [x] Day 32 — LeetCode 133: Clone Graph
 - [x] Day 33 — LeetCode 150: Evaluate Reverse Polish Notation
 - [x] Day 34 — LeetCode 207: Course Schedule
+- [x] Day 35 — LeetCode 208: Implement Trie (Prefix Tree)
 
 ## Next
 
-- [ ] Day 35 — LeetCode 208: Implement Trie (Prefix Tree)
+- [ ] Day 36 — LeetCode 322: Coin Change

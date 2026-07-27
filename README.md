@@ -51,6 +51,7 @@ Each problem includes:
 | 32 | 133 | Clone Graph | Medium | Breadth-First Search | Identity-to-Clone Dictionary | `O(V + E)` | `O(V)` | ✅ Completed |
 | 33 | 150 | Evaluate Reverse Polish Notation | Medium | Postfix Evaluation | Array-Backed Stack | `O(n)` | `O(n)` | ✅ Completed |
 | 34 | 207 | Course Schedule | Medium | Topological Sort | Adjacency Lists and Indegree Array | `O(V + E)` | `O(V + E)` | ✅ Completed |
+| 35 | 208 | Implement Trie (Prefix Tree) | Medium | Prefix Tree Traversal | Character-to-Node Dictionaries | `O(n)` per operation | `O(n)` insertion, `O(1)` search | ✅ Completed |
 
 ## Repository Structure
 
@@ -462,3 +463,15 @@ remainder.
 - Data structure: Adjacency lists, indegree array, and array-backed queue
 - Time: `O(V + E)`
 - Space: `O(V + E)`
+
+## Day 35: Implement Trie (Prefix Tree)
+
+Store each character along a path from a root node, sharing common prefixes
+between words. Mark the final node of every inserted word so an exact search can
+distinguish a complete word from a prefix. Prefix search only needs the path to
+exist.
+
+- Pattern: Prefix tree traversal
+- Data structure: Trie nodes with character-to-child dictionaries
+- Time: `O(n)` per operation for an input of length `n`
+- Space: `O(n)` for insertion in the worst case; `O(1)` auxiliary for search
