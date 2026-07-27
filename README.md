@@ -52,6 +52,7 @@ Each problem includes:
 | 33 | 150 | Evaluate Reverse Polish Notation | Medium | Postfix Evaluation | Array-Backed Stack | `O(n)` | `O(n)` | ✅ Completed |
 | 34 | 207 | Course Schedule | Medium | Topological Sort | Adjacency Lists and Indegree Array | `O(V + E)` | `O(V + E)` | ✅ Completed |
 | 35 | 208 | Implement Trie (Prefix Tree) | Medium | Prefix Tree Traversal | Character-to-Node Dictionaries | `O(n)` per operation | `O(n)` insertion, `O(1)` search | ✅ Completed |
+| 36 | 322 | Coin Change | Medium | Bottom-Up Dynamic Programming | Minimum-Count Array | `O(amount * c)` | `O(amount)` | ✅ Completed |
 
 ## Repository Structure
 
@@ -475,3 +476,15 @@ exist.
 - Data structure: Trie nodes with character-to-child dictionaries
 - Time: `O(n)` per operation for an input of length `n`
 - Space: `O(n)` for insertion in the worst case; `O(1)` auxiliary for search
+
+## Day 36: Coin Change
+
+Build the answer for every value from zero through the target amount. For each
+value, try every usable coin and add one to the best answer for the remaining
+smaller value. An unreachable sentinel distinguishes amounts that cannot be
+formed.
+
+- Pattern: Bottom-up dynamic programming
+- Data structure: Array of minimum coin counts
+- Time: `O(amount * c)` for `c` coin denominations
+- Space: `O(amount)`

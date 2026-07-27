@@ -37,7 +37,8 @@
 - [x] Day 33 — LeetCode 150: Evaluate Reverse Polish Notation
 - [x] Day 34 — LeetCode 207: Course Schedule
 - [x] Day 35 — LeetCode 208: Implement Trie (Prefix Tree)
+- [x] Day 36 — LeetCode 322: Coin Change
 
 ## Next
 
-- [ ] Day 36 — LeetCode 322: Coin Change
+- [ ] Day 37 — LeetCode 238: Product of Array Except Self
