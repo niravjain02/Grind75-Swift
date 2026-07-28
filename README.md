@@ -57,6 +57,7 @@ Each problem includes:
 | 38 | 155 | Min Stack | Medium | Stack with Running Minimum | Array of Value-Minimum Pairs | `O(1)` per operation | `O(n)` | ✅ Completed |
 | 39 | 98 | Validate Binary Search Tree | Medium | DFS with Bounds | Binary Tree and Recursion Stack | `O(n)` | `O(h)` | ✅ Completed |
 | 40 | 200 | Number of Islands | Medium | Iterative Depth-First Search | Mutable Grid Copy and Stack | `O(m * n)` | `O(m * n)` | ✅ Completed |
+| 41 | 994 | Rotting Oranges | Medium | Multi-Source Breadth-First Search | Mutable Grid Copy and Array-Backed Queue | `O(m * n)` | `O(m * n)` | ✅ Completed |
 
 ## Repository Structure
 
@@ -534,5 +535,17 @@ component as water. Mark cells when adding them to the stack to avoid duplicates
 
 - Pattern: Connected-component traversal
 - Data structure: Mutable grid copy and array-backed stack
+- Time: `O(m * n)`
+- Space: `O(m * n)`
+
+## Day 41: Rotting Oranges
+
+Enqueue every initially rotten orange so all sources spread at the same time.
+Process the queue one level at a time, where each level represents one minute,
+and immediately mark newly rotten oranges to prevent duplicate enqueues. A
+remaining fresh-orange count identifies an unreachable orange.
+
+- Pattern: Multi-source breadth-first search
+- Data structure: Mutable grid copy and array-backed queue
 - Time: `O(m * n)`
 - Space: `O(m * n)`

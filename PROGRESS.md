@@ -42,7 +42,8 @@
 - [x] Day 38 — LeetCode 155: Min Stack
 - [x] Day 39 — LeetCode 98: Validate Binary Search Tree
 - [x] Day 40 — LeetCode 200: Number of Islands
+- [x] Day 41 — LeetCode 994: Rotting Oranges
 
 ## Next
 
-- [ ] Day 41 — LeetCode 994: Rotting Oranges
+- [ ] Day 42 — LeetCode 33: Search in Rotated Sorted Array
