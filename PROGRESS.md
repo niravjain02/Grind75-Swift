@@ -43,7 +43,8 @@
 - [x] Day 39 — LeetCode 98: Validate Binary Search Tree
 - [x] Day 40 — LeetCode 200: Number of Islands
 - [x] Day 41 — LeetCode 994: Rotting Oranges
+- [x] Day 42 — LeetCode 33: Search in Rotated Sorted Array
 
 ## Next
 
-- [ ] Day 42 — LeetCode 33: Search in Rotated Sorted Array
+- [ ] Day 43 — LeetCode 39: Combination Sum

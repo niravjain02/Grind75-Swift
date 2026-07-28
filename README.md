@@ -58,6 +58,7 @@ Each problem includes:
 | 39 | 98 | Validate Binary Search Tree | Medium | DFS with Bounds | Binary Tree and Recursion Stack | `O(n)` | `O(h)` | ✅ Completed |
 | 40 | 200 | Number of Islands | Medium | Iterative Depth-First Search | Mutable Grid Copy and Stack | `O(m * n)` | `O(m * n)` | ✅ Completed |
 | 41 | 994 | Rotting Oranges | Medium | Multi-Source Breadth-First Search | Mutable Grid Copy and Array-Backed Queue | `O(m * n)` | `O(m * n)` | ✅ Completed |
+| 42 | 33 | Search in Rotated Sorted Array | Medium | Modified Binary Search | Integer Bounds | `O(log n)` | `O(1)` | ✅ Completed |
 
 ## Repository Structure
 
@@ -549,3 +550,15 @@ remaining fresh-orange count identifies an unreachable orange.
 - Data structure: Mutable grid copy and array-backed queue
 - Time: `O(m * n)`
 - Space: `O(m * n)`
+
+## Day 42: Search in Rotated Sorted Array
+
+At every binary-search step, at least one half of the current range is normally
+sorted. Identify that half, check whether the target lies within its inclusive
+outer bound and exclusive middle bound, and discard the other half. This keeps
+the search logarithmic without locating the rotation pivot separately.
+
+- Pattern: Modified binary search
+- Data structure: Two integer bounds over the array
+- Time: `O(log n)`
+- Space: `O(1)`
