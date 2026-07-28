@@ -59,6 +59,7 @@ Each problem includes:
 | 40 | 200 | Number of Islands | Medium | Iterative Depth-First Search | Mutable Grid Copy and Stack | `O(m * n)` | `O(m * n)` | ✅ Completed |
 | 41 | 994 | Rotting Oranges | Medium | Multi-Source Breadth-First Search | Mutable Grid Copy and Array-Backed Queue | `O(m * n)` | `O(m * n)` | ✅ Completed |
 | 42 | 33 | Search in Rotated Sorted Array | Medium | Modified Binary Search | Integer Bounds | `O(log n)` | `O(1)` | ✅ Completed |
+| 43 | 39 | Combination Sum | Medium | Backtracking | Sorted Candidate Array and Recursion Path | `O(n^(t/m))` | `O(t/m)` auxiliary | ✅ Completed |
 
 ## Repository Structure
 
@@ -562,3 +563,15 @@ the search logarithmic without locating the rotation pivot separately.
 - Data structure: Two integer bounds over the array
 - Time: `O(log n)`
 - Space: `O(1)`
+
+## Day 43: Combination Sum
+
+Sort the candidates, then build combinations in nondecreasing order with
+backtracking. Each recursive call may reuse its current candidate, while its
+start index prevents reordered duplicates. Sorting also lets the search stop as
+soon as a candidate exceeds the remaining target.
+
+- Pattern: Backtracking
+- Data structure: Sorted candidate array and array-backed recursion path
+- Time: `O(n^(t/m))` in the worst case for target `t` and smallest candidate `m`
+- Space: `O(t/m)` auxiliary space, excluding returned combinations

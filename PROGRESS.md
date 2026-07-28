@@ -44,7 +44,8 @@
 - [x] Day 40 — LeetCode 200: Number of Islands
 - [x] Day 41 — LeetCode 994: Rotting Oranges
 - [x] Day 42 — LeetCode 33: Search in Rotated Sorted Array
+- [x] Day 43 — LeetCode 39: Combination Sum
 
 ## Next
 
-- [ ] Day 43 — LeetCode 39: Combination Sum
+- [ ] Day 44 — LeetCode 46: Permutations
