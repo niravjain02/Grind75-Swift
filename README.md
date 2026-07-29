@@ -65,6 +65,7 @@ Each problem includes:
 | 46 | 236 | Lowest Common Ancestor of a Binary Tree | Medium | Postorder DFS | Binary Tree and Recursion Stack | `O(n)` | `O(h)` | ✅ Completed |
 | 47 | 981 | Time Based Key-Value Store | Medium | Binary Search by Timestamp | Dictionary of Sorted Entry Arrays | `O(1)` set, `O(log n)` get | `O(n)` | ✅ Completed |
 | 48 | 721 | Accounts Merge | Medium | Union-Find | Email Owner Dictionary and Disjoint Set | `O(e log e)` | `O(n + e)` | ✅ Completed |
+| 49 | 75 | Sort Colors | Medium | Dutch National Flag | Three Array Indices | `O(n)` | `O(1)` | ✅ Completed |
 
 ## Repository Structure
 
@@ -635,3 +636,14 @@ sort the emails in each resulting component.
 - Data structure: Email-owner dictionary and disjoint-set arrays
 - Time: `O(e * α(n) + e log e)`, dominated by sorting emails
 - Space: `O(n + e)`
+
+## Day 49: Sort Colors
+
+Partition the array into zeros, unclassified values, and twos with three indices.
+Move zeros to the front and twos to the back; recheck values swapped from the
+right because they have not been classified yet.
+
+- Pattern: Dutch national flag partitioning
+- Data structure: Three indices over the input array
+- Time: `O(n)`
+- Space: `O(1)`
