@@ -60,6 +60,7 @@ Each problem includes:
 | 41 | 994 | Rotting Oranges | Medium | Multi-Source Breadth-First Search | Mutable Grid Copy and Array-Backed Queue | `O(m * n)` | `O(m * n)` | ✅ Completed |
 | 42 | 33 | Search in Rotated Sorted Array | Medium | Modified Binary Search | Integer Bounds | `O(log n)` | `O(1)` | ✅ Completed |
 | 43 | 39 | Combination Sum | Medium | Backtracking | Sorted Candidate Array and Recursion Path | `O(n^(t/m))` | `O(t/m)` auxiliary | ✅ Completed |
+| 44 | 46 | Permutations | Medium | Backtracking | Used-Index Array and Recursion Path | `O(n * n!)` | `O(n)` auxiliary | ✅ Completed |
 
 ## Repository Structure
 
@@ -575,3 +576,14 @@ soon as a candidate exceeds the remaining target.
 - Data structure: Sorted candidate array and array-backed recursion path
 - Time: `O(n^(t/m))` in the worst case for target `t` and smallest candidate `m`
 - Space: `O(t/m)` auxiliary space, excluding returned combinations
+
+## Day 44: Permutations
+
+Build each ordering one position at a time with backtracking. At every position,
+try each input value whose index is not already in the current path. After
+exploring that choice, remove it and mark its index available for the next branch.
+
+- Pattern: Backtracking
+- Data structure: Boolean used-index array and array-backed recursion path
+- Time: `O(n * n!)`
+- Space: `O(n)` auxiliary space, excluding returned permutations
