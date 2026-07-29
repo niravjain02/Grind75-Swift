@@ -64,6 +64,7 @@ Each problem includes:
 | 45 | 56 | Merge Intervals | Medium | Sorting and Linear Merge | Sorted Interval Array | `O(n log n)` | `O(n)` | ✅ Completed |
 | 46 | 236 | Lowest Common Ancestor of a Binary Tree | Medium | Postorder DFS | Binary Tree and Recursion Stack | `O(n)` | `O(h)` | ✅ Completed |
 | 47 | 981 | Time Based Key-Value Store | Medium | Binary Search by Timestamp | Dictionary of Sorted Entry Arrays | `O(1)` set, `O(log n)` get | `O(n)` | ✅ Completed |
+| 48 | 721 | Accounts Merge | Medium | Union-Find | Email Owner Dictionary and Disjoint Set | `O(e log e)` | `O(n + e)` | ✅ Completed |
 
 ## Repository Structure
 
@@ -623,3 +624,14 @@ returns the entry immediately before the first timestamp greater than the query.
 - Data structure: Dictionary of sorted entry arrays
 - Time: `O(1)` amortized for `set`; `O(log n)` for `get`
 - Space: `O(n)` across stored entries
+
+## Day 48: Accounts Merge
+
+Map each email to its first account and union account indices whenever an email
+is shared. After all unions, group every email by its representative account and
+sort the emails in each resulting component.
+
+- Pattern: Union-find connected components
+- Data structure: Email-owner dictionary and disjoint-set arrays
+- Time: `O(e * α(n) + e log e)`, dominated by sorting emails
+- Space: `O(n + e)`

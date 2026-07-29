@@ -49,7 +49,8 @@
 - [x] Day 45 — LeetCode 56: Merge Intervals
 - [x] Day 46 — LeetCode 236: Lowest Common Ancestor of a Binary Tree
 - [x] Day 47 — LeetCode 981: Time Based Key-Value Store
+- [x] Day 48 — LeetCode 721: Accounts Merge
 
 ## Next
 
-- [ ] Day 48 — LeetCode 721: Accounts Merge
+- [ ] Day 49 — LeetCode 75: Sort Colors
