@@ -47,7 +47,8 @@
 - [x] Day 43 — LeetCode 39: Combination Sum
 - [x] Day 44 — LeetCode 46: Permutations
 - [x] Day 45 — LeetCode 56: Merge Intervals
+- [x] Day 46 — LeetCode 236: Lowest Common Ancestor of a Binary Tree
 
 ## Next
 
-- [ ] Day 46 — LeetCode 236: Lowest Common Ancestor of a Binary Tree
+- [ ] Day 47 — LeetCode 981: Time Based Key-Value Store

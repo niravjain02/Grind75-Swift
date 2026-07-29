@@ -62,6 +62,7 @@ Each problem includes:
 | 43 | 39 | Combination Sum | Medium | Backtracking | Sorted Candidate Array and Recursion Path | `O(n^(t/m))` | `O(t/m)` auxiliary | ✅ Completed |
 | 44 | 46 | Permutations | Medium | Backtracking | Used-Index Array and Recursion Path | `O(n * n!)` | `O(n)` auxiliary | ✅ Completed |
 | 45 | 56 | Merge Intervals | Medium | Sorting and Linear Merge | Sorted Interval Array | `O(n log n)` | `O(n)` | ✅ Completed |
+| 46 | 236 | Lowest Common Ancestor of a Binary Tree | Medium | Postorder DFS | Binary Tree and Recursion Stack | `O(n)` | `O(h)` | ✅ Completed |
 
 ## Repository Structure
 
@@ -599,3 +600,14 @@ merged end when the current interval overlaps or touches it.
 - Data structure: Sorted interval array and output array
 - Time: `O(n log n)`
 - Space: `O(n)` for sorting and the returned intervals
+
+## Day 46: Lowest Common Ancestor of a Binary Tree
+
+Search both subtrees recursively. A target node returns itself; when the left and
+right searches both find a target, the current node is their lowest meeting
+point. Otherwise, propagate the one nonempty result toward the root.
+
+- Pattern: Postorder depth-first search
+- Data structure: Binary tree and recursion stack
+- Time: `O(n)`
+- Space: `O(h)` for a tree of height `h`
