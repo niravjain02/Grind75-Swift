@@ -46,7 +46,8 @@
 - [x] Day 42 — LeetCode 33: Search in Rotated Sorted Array
 - [x] Day 43 — LeetCode 39: Combination Sum
 - [x] Day 44 — LeetCode 46: Permutations
+- [x] Day 45 — LeetCode 56: Merge Intervals
 
 ## Next
 
-- [ ] Day 45 — LeetCode 56: Merge Intervals
+- [ ] Day 46 — LeetCode 236: Lowest Common Ancestor of a Binary Tree

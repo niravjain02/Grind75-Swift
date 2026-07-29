@@ -61,6 +61,7 @@ Each problem includes:
 | 42 | 33 | Search in Rotated Sorted Array | Medium | Modified Binary Search | Integer Bounds | `O(log n)` | `O(1)` | ✅ Completed |
 | 43 | 39 | Combination Sum | Medium | Backtracking | Sorted Candidate Array and Recursion Path | `O(n^(t/m))` | `O(t/m)` auxiliary | ✅ Completed |
 | 44 | 46 | Permutations | Medium | Backtracking | Used-Index Array and Recursion Path | `O(n * n!)` | `O(n)` auxiliary | ✅ Completed |
+| 45 | 56 | Merge Intervals | Medium | Sorting and Linear Merge | Sorted Interval Array | `O(n log n)` | `O(n)` | ✅ Completed |
 
 ## Repository Structure
 
@@ -587,3 +588,14 @@ exploring that choice, remove it and mark its index available for the next branc
 - Data structure: Boolean used-index array and array-backed recursion path
 - Time: `O(n * n!)`
 - Space: `O(n)` auxiliary space, excluding returned permutations
+
+## Day 45: Merge Intervals
+
+Sort intervals by start value so every possible overlap appears next to the
+current merged range. Scan once: append a disjoint interval, or extend the last
+merged end when the current interval overlaps or touches it.
+
+- Pattern: Sorting and linear merge
+- Data structure: Sorted interval array and output array
+- Time: `O(n log n)`
+- Space: `O(n)` for sorting and the returned intervals
