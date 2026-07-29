@@ -63,6 +63,7 @@ Each problem includes:
 | 44 | 46 | Permutations | Medium | Backtracking | Used-Index Array and Recursion Path | `O(n * n!)` | `O(n)` auxiliary | ✅ Completed |
 | 45 | 56 | Merge Intervals | Medium | Sorting and Linear Merge | Sorted Interval Array | `O(n log n)` | `O(n)` | ✅ Completed |
 | 46 | 236 | Lowest Common Ancestor of a Binary Tree | Medium | Postorder DFS | Binary Tree and Recursion Stack | `O(n)` | `O(h)` | ✅ Completed |
+| 47 | 981 | Time Based Key-Value Store | Medium | Binary Search by Timestamp | Dictionary of Sorted Entry Arrays | `O(1)` set, `O(log n)` get | `O(n)` | ✅ Completed |
 
 ## Repository Structure
 
@@ -611,3 +612,14 @@ point. Otherwise, propagate the one nonempty result toward the root.
 - Data structure: Binary tree and recursion stack
 - Time: `O(n)`
 - Space: `O(h)` for a tree of height `h`
+
+## Day 47: Time Based Key-Value Store
+
+Store each key's values in timestamp order. Since timestamps arrive strictly
+increasing, insertion is an append. Retrieval uses upper-bound binary search and
+returns the entry immediately before the first timestamp greater than the query.
+
+- Pattern: Binary search by timestamp
+- Data structure: Dictionary of sorted entry arrays
+- Time: `O(1)` amortized for `set`; `O(log n)` for `get`
+- Space: `O(n)` across stored entries
