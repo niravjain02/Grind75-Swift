@@ -52,7 +52,8 @@
 - [x] Day 48 — LeetCode 721: Accounts Merge
 - [x] Day 49 — LeetCode 75: Sort Colors
 - [x] Day 50 — LeetCode 139: Word Break
+- [x] Day 51 — LeetCode 416: Partition Equal Subset Sum
 
 ## Next
 
-- [ ] Day 51 — LeetCode 416: Partition Equal Subset Sum
+- [ ] Day 52 — LeetCode 8: String to Integer (atoi)

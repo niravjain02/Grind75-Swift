@@ -67,6 +67,7 @@ Each problem includes:
 | 48 | 721 | Accounts Merge | Medium | Union-Find | Email Owner Dictionary and Disjoint Set | `O(e log e)` | `O(n + e)` | ✅ Completed |
 | 49 | 75 | Sort Colors | Medium | Dutch National Flag | Three Array Indices | `O(n)` | `O(1)` | ✅ Completed |
 | 50 | 139 | Word Break | Medium | Dynamic Programming with Trie Traversal | Trie and Reachability Array | `O(d + n * l)` | `O(d + n)` | ✅ Completed |
+| 51 | 416 | Partition Equal Subset Sum | Medium | 0/1 Knapsack Dynamic Programming | Boolean Reachability Array | `O(n * t)` | `O(t)` | ✅ Completed |
 
 ## Repository Structure
 
@@ -660,3 +661,15 @@ the final boundary proves that dictionary words can form the whole string.
 - Data structure: Byte trie and Boolean reachability array
 - Time: `O(d + n * l)` for total dictionary size `d` and longest word length `l`
 - Space: `O(d + n)`
+
+## Day 51: Partition Equal Subset Sum
+
+An equal partition exists exactly when some subset sums to half of the total.
+Track which sums through that target are reachable, processing the array one
+number at a time. Scan sums backward so each input number contributes at most
+once instead of being reused during its own iteration.
+
+- Pattern: 0/1 knapsack dynamic programming
+- Data structure: Boolean reachability array
+- Time: `O(n * t)` for target half-sum `t`
+- Space: `O(t)`
