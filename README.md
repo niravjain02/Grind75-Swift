@@ -68,6 +68,7 @@ Each problem includes:
 | 49 | 75 | Sort Colors | Medium | Dutch National Flag | Three Array Indices | `O(n)` | `O(1)` | ✅ Completed |
 | 50 | 139 | Word Break | Medium | Dynamic Programming with Trie Traversal | Trie and Reachability Array | `O(d + n * l)` | `O(d + n)` | ✅ Completed |
 | 51 | 416 | Partition Equal Subset Sum | Medium | 0/1 Knapsack Dynamic Programming | Boolean Reachability Array | `O(n * t)` | `O(t)` | ✅ Completed |
+| 52 | 8 | String to Integer (atoi) | Medium | Bounded Linear Parsing | UTF-8 View and Integer State | `O(n)` | `O(1)` | ✅ Completed |
 
 ## Repository Structure
 
@@ -673,3 +674,15 @@ once instead of being reused during its own iteration.
 - Data structure: Boolean reachability array
 - Time: `O(n * t)` for target half-sum `t`
 - Space: `O(t)`
+
+## Day 52: String to Integer (atoi)
+
+Skip leading ASCII spaces, read one optional sign, and accumulate consecutive
+decimal digits. Before multiplying by ten, compare against the signed 32-bit
+limit so overflow clamps safely without ever overflowing Swift's integer type.
+Parsing stops at the first character that is not part of the integer.
+
+- Pattern: Bounded linear parsing
+- Data structure: UTF-8 view plus sign and magnitude integer state
+- Time: `O(n)`
+- Space: `O(1)`
