@@ -51,7 +51,8 @@
 - [x] Day 47 — LeetCode 981: Time Based Key-Value Store
 - [x] Day 48 — LeetCode 721: Accounts Merge
 - [x] Day 49 — LeetCode 75: Sort Colors
+- [x] Day 50 — LeetCode 139: Word Break
 
 ## Next
 
-- [ ] Day 50 — LeetCode 139: Word Break
+- [ ] Day 51 — LeetCode 416: Partition Equal Subset Sum

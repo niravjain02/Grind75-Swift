@@ -66,6 +66,7 @@ Each problem includes:
 | 47 | 981 | Time Based Key-Value Store | Medium | Binary Search by Timestamp | Dictionary of Sorted Entry Arrays | `O(1)` set, `O(log n)` get | `O(n)` | ✅ Completed |
 | 48 | 721 | Accounts Merge | Medium | Union-Find | Email Owner Dictionary and Disjoint Set | `O(e log e)` | `O(n + e)` | ✅ Completed |
 | 49 | 75 | Sort Colors | Medium | Dutch National Flag | Three Array Indices | `O(n)` | `O(1)` | ✅ Completed |
+| 50 | 139 | Word Break | Medium | Dynamic Programming with Trie Traversal | Trie and Reachability Array | `O(d + n * l)` | `O(d + n)` | ✅ Completed |
 
 ## Repository Structure
 
@@ -647,3 +648,15 @@ right because they have not been classified yet.
 - Data structure: Three indices over the input array
 - Time: `O(n)`
 - Space: `O(1)`
+
+## Day 50: Word Break
+
+Build a trie from the dictionary, then use dynamic programming to mark every
+reachable boundary in the string. From each reachable boundary, walk forward
+through the trie and mark the end of every matched word as reachable. Reaching
+the final boundary proves that dictionary words can form the whole string.
+
+- Pattern: Dynamic programming with trie traversal
+- Data structure: Byte trie and Boolean reachability array
+- Time: `O(d + n * l)` for total dictionary size `d` and longest word length `l`
+- Space: `O(d + n)`
