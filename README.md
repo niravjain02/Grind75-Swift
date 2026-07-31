@@ -69,6 +69,7 @@ Each problem includes:
 | 50 | 139 | Word Break | Medium | Dynamic Programming with Trie Traversal | Trie and Reachability Array | `O(d + n * l)` | `O(d + n)` | ✅ Completed |
 | 51 | 416 | Partition Equal Subset Sum | Medium | 0/1 Knapsack Dynamic Programming | Boolean Reachability Array | `O(n * t)` | `O(t)` | ✅ Completed |
 | 52 | 8 | String to Integer (atoi) | Medium | Bounded Linear Parsing | UTF-8 View and Integer State | `O(n)` | `O(1)` | ✅ Completed |
+| 53 | 54 | Spiral Matrix | Medium | Shrinking Boundaries | Four Integer Bounds | `O(m * n)` | `O(1)` auxiliary | ✅ Completed |
 
 ## Repository Structure
 
@@ -686,3 +687,14 @@ Parsing stops at the first character that is not part of the integer.
 - Data structure: UTF-8 view plus sign and magnitude integer state
 - Time: `O(n)`
 - Space: `O(1)`
+
+## Day 53: Spiral Matrix
+
+Maintain top, bottom, left, and right boundaries around the unvisited rectangle.
+Traverse its top row, right column, bottom row, and left column, shrinking each
+boundary after use and checking that rows or columns remain before revisiting them.
+
+- Pattern: Shrinking matrix boundaries
+- Data structure: Four integer bounds
+- Time: `O(m * n)`
+- Space: `O(1)` auxiliary, excluding output
