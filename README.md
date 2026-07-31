@@ -70,6 +70,7 @@ Each problem includes:
 | 51 | 416 | Partition Equal Subset Sum | Medium | 0/1 Knapsack Dynamic Programming | Boolean Reachability Array | `O(n * t)` | `O(t)` | ✅ Completed |
 | 52 | 8 | String to Integer (atoi) | Medium | Bounded Linear Parsing | UTF-8 View and Integer State | `O(n)` | `O(1)` | ✅ Completed |
 | 53 | 54 | Spiral Matrix | Medium | Shrinking Boundaries | Four Integer Bounds | `O(m * n)` | `O(1)` auxiliary | ✅ Completed |
+| 54 | 78 | Subsets | Medium | Iterative Subset Expansion | Result Array | `O(n * 2^n)` | `O(n * 2^n)` | ✅ Completed |
 
 ## Repository Structure
 
@@ -698,3 +699,14 @@ boundary after use and checking that rows or columns remain before revisiting th
 - Data structure: Four integer bounds
 - Time: `O(m * n)`
 - Space: `O(1)` auxiliary, excluding output
+
+## Day 54: Subsets
+
+Start with the empty subset. For each number, copy every subset that already
+exists, append the number to each copy, and add those new subsets to the result.
+After processing all values, the result contains every include-or-exclude choice.
+
+- Pattern: Iterative subset expansion
+- Data structure: Result array of integer arrays
+- Time: `O(n * 2^n)`
+- Space: `O(n * 2^n)` for the returned subsets

@@ -55,7 +55,8 @@
 - [x] Day 51 — LeetCode 416: Partition Equal Subset Sum
 - [x] Day 52 — LeetCode 8: String to Integer (atoi)
 - [x] Day 53 — LeetCode 54: Spiral Matrix
+- [x] Day 54 — LeetCode 78: Subsets
 
 ## Next
 
-- [ ] Day 54 — LeetCode 78: Subsets
+- [ ] Day 55 — LeetCode 199: Binary Tree Right Side View
