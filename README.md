@@ -71,6 +71,7 @@ Each problem includes:
 | 52 | 8 | String to Integer (atoi) | Medium | Bounded Linear Parsing | UTF-8 View and Integer State | `O(n)` | `O(1)` | ✅ Completed |
 | 53 | 54 | Spiral Matrix | Medium | Shrinking Boundaries | Four Integer Bounds | `O(m * n)` | `O(1)` auxiliary | ✅ Completed |
 | 54 | 78 | Subsets | Medium | Iterative Subset Expansion | Result Array | `O(n * 2^n)` | `O(n * 2^n)` | ✅ Completed |
+| 55 | 199 | Binary Tree Right Side View | Medium | Level-Order Traversal | Array-Backed Queue | `O(n)` | `O(n)` | ✅ Completed |
 
 ## Repository Structure
 
@@ -710,3 +711,14 @@ After processing all values, the result contains every include-or-exclude choice
 - Data structure: Result array of integer arrays
 - Time: `O(n * 2^n)`
 - Space: `O(n * 2^n)` for the returned subsets
+
+## Day 55: Binary Tree Right Side View
+
+Traverse the tree level by level from left to right. Capture the final node
+processed at each level because it is the node visible from the right. An index
+advances through the queue so removing its first element never requires shifting.
+
+- Pattern: Level-order breadth-first search
+- Data structure: Array-backed queue with a moving head index
+- Time: `O(n)`
+- Space: `O(n)`

@@ -56,7 +56,8 @@
 - [x] Day 52 — LeetCode 8: String to Integer (atoi)
 - [x] Day 53 — LeetCode 54: Spiral Matrix
 - [x] Day 54 — LeetCode 78: Subsets
+- [x] Day 55 — LeetCode 199: Binary Tree Right Side View
 
 ## Next
 
-- [ ] Day 55 — LeetCode 199: Binary Tree Right Side View
+- [ ] Day 56 — LeetCode 5: Longest Palindromic Substring
