@@ -73,6 +73,7 @@ Each problem includes:
 | 54 | 78 | Subsets | Medium | Iterative Subset Expansion | Result Array | `O(n * 2^n)` | `O(n * 2^n)` | ✅ Completed |
 | 55 | 199 | Binary Tree Right Side View | Medium | Level-Order Traversal | Array-Backed Queue | `O(n)` | `O(n)` | ✅ Completed |
 | 56 | 5 | Longest Palindromic Substring | Medium | Expand Around Center | Character Array | `O(n²)` | `O(n)` | ✅ Completed |
+| 57 | 62 | Unique Paths | Medium | Grid Dynamic Programming | One-Dimensional Integer Array | `O(m * n)` | `O(min(m, n))` | ✅ Completed |
 
 ## Repository Structure
 
@@ -735,3 +736,15 @@ palindromes without a quadratic dynamic-programming table.
 - Data structure: Random-access character array
 - Time: `O(n²)`
 - Space: `O(n)` for Swift character indexing
+
+## Day 57: Unique Paths
+
+The number of ways to reach a cell equals the paths reaching the cell above plus
+the paths reaching the cell to its left. Initialize the first row to one, then
+update a single array from left to right for every remaining row. Using the
+smaller dimension as the array width minimizes auxiliary storage.
+
+- Pattern: Grid dynamic programming
+- Data structure: One-dimensional integer array
+- Time: `O(m * n)`
+- Space: `O(min(m, n))`

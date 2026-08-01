@@ -58,7 +58,8 @@
 - [x] Day 54 — LeetCode 78: Subsets
 - [x] Day 55 — LeetCode 199: Binary Tree Right Side View
 - [x] Day 56 — LeetCode 5: Longest Palindromic Substring
+- [x] Day 57 — LeetCode 62: Unique Paths
 
 ## Next
 
-- [ ] Day 57 — LeetCode 62: Unique Paths
+- [ ] Day 58 — LeetCode 105: Construct Binary Tree from Preorder and Inorder Traversal
