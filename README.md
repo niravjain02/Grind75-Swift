@@ -74,6 +74,7 @@ Each problem includes:
 | 55 | 199 | Binary Tree Right Side View | Medium | Level-Order Traversal | Array-Backed Queue | `O(n)` | `O(n)` | ✅ Completed |
 | 56 | 5 | Longest Palindromic Substring | Medium | Expand Around Center | Character Array | `O(n²)` | `O(n)` | ✅ Completed |
 | 57 | 62 | Unique Paths | Medium | Grid Dynamic Programming | One-Dimensional Integer Array | `O(m * n)` | `O(min(m, n))` | ✅ Completed |
+| 58 | 105 | Construct Binary Tree from Preorder and Inorder Traversal | Medium | Recursive Traversal Partitioning | Index Dictionary and Binary Tree | `O(n)` | `O(n)` | ✅ Completed |
 
 ## Repository Structure
 
@@ -748,3 +749,15 @@ smaller dimension as the array width minimizes auxiliary storage.
 - Data structure: One-dimensional integer array
 - Time: `O(m * n)`
 - Space: `O(min(m, n))`
+
+## Day 58: Construct Binary Tree from Preorder and Inorder Traversal
+
+Preorder identifies the next subtree root, while that value's inorder position
+divides the remaining nodes into left and right subtrees. Consume preorder once
+and recursively build those inorder ranges. A dictionary avoids repeatedly
+scanning inorder to locate each root.
+
+- Pattern: Recursive traversal partitioning
+- Data structure: Value-to-inorder-index dictionary and binary tree
+- Time: `O(n)`
+- Space: `O(n)` for the dictionary and recursion stack
