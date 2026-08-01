@@ -72,6 +72,7 @@ Each problem includes:
 | 53 | 54 | Spiral Matrix | Medium | Shrinking Boundaries | Four Integer Bounds | `O(m * n)` | `O(1)` auxiliary | ✅ Completed |
 | 54 | 78 | Subsets | Medium | Iterative Subset Expansion | Result Array | `O(n * 2^n)` | `O(n * 2^n)` | ✅ Completed |
 | 55 | 199 | Binary Tree Right Side View | Medium | Level-Order Traversal | Array-Backed Queue | `O(n)` | `O(n)` | ✅ Completed |
+| 56 | 5 | Longest Palindromic Substring | Medium | Expand Around Center | Character Array | `O(n²)` | `O(n)` | ✅ Completed |
 
 ## Repository Structure
 
@@ -722,3 +723,15 @@ advances through the queue so removing its first element never requires shifting
 - Data structure: Array-backed queue with a moving head index
 - Time: `O(n)`
 - Space: `O(n)`
+
+## Day 56: Longest Palindromic Substring
+
+Treat every character and every gap between adjacent characters as a possible
+palindrome center. Expand outward while the two characters match and retain the
+longest range found. Checking both center types covers odd- and even-length
+palindromes without a quadratic dynamic-programming table.
+
+- Pattern: Expand around center
+- Data structure: Random-access character array
+- Time: `O(n²)`
+- Space: `O(n)` for Swift character indexing

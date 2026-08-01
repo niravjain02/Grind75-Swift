@@ -57,7 +57,8 @@
 - [x] Day 53 — LeetCode 54: Spiral Matrix
 - [x] Day 54 — LeetCode 78: Subsets
 - [x] Day 55 — LeetCode 199: Binary Tree Right Side View
+- [x] Day 56 — LeetCode 5: Longest Palindromic Substring
 
 ## Next
 
-- [ ] Day 56 — LeetCode 5: Longest Palindromic Substring
+- [ ] Day 57 — LeetCode 62: Unique Paths
