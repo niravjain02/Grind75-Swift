@@ -60,7 +60,8 @@
 - [x] Day 56 — LeetCode 5: Longest Palindromic Substring
 - [x] Day 57 — LeetCode 62: Unique Paths
 - [x] Day 58 — LeetCode 105: Construct Binary Tree from Preorder and Inorder Traversal
+- [x] Day 59 — LeetCode 11: Container With Most Water
 
 ## Next
 
-- [ ] Day 59 — LeetCode 11: Container With Most Water
+- [ ] Day 60 — LeetCode 17: Letter Combinations of a Phone Number

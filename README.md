@@ -761,3 +761,17 @@ scanning inorder to locate each root.
 - Data structure: Value-to-inorder-index dictionary and binary tree
 - Time: `O(n)`
 - Space: `O(n)` for the dictionary and recursion stack
+
+## Day 59: Container With Most Water
+
+Start with the widest possible pair of lines and compute its area. Move the
+pointer at the shorter line inward because keeping that limiting height while
+reducing the width cannot improve the area; only a taller line might. Repeat
+until the pointers meet.
+
+- LeetCode: 11
+- Difficulty: Medium
+- Pattern: Two pointers
+- Data structure: Two integer indices
+- Time: `O(n)`
+- Space: `O(1)`
