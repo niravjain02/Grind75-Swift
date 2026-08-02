@@ -775,3 +775,16 @@ until the pointers meet.
 - Data structure: Two integer indices
 - Time: `O(n)`
 - Space: `O(1)`
+
+## Day 60: Letter Combinations of a Phone Number
+
+Build one combination from left to right. At each digit, try each mapped phone
+letter, recurse to the next digit, and remove that letter before trying the next
+choice. Reaching the end produces one complete combination.
+
+- LeetCode: 17
+- Difficulty: Medium
+- Pattern: Backtracking
+- Data structure: Digit-to-letters dictionary and character path array
+- Time: `O(n * 4^n)` including construction of the returned strings
+- Space: `O(n)` auxiliary, excluding output

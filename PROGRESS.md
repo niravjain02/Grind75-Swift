@@ -61,7 +61,8 @@
 - [x] Day 57 — LeetCode 62: Unique Paths
 - [x] Day 58 — LeetCode 105: Construct Binary Tree from Preorder and Inorder Traversal
 - [x] Day 59 — LeetCode 11: Container With Most Water
+- [x] Day 60 — LeetCode 17: Letter Combinations of a Phone Number
 
 ## Next
 
-- [ ] Day 60 — LeetCode 17: Letter Combinations of a Phone Number
+- [ ] Day 61 — LeetCode 79: Word Search
