@@ -62,7 +62,8 @@
 - [x] Day 58 — LeetCode 105: Construct Binary Tree from Preorder and Inorder Traversal
 - [x] Day 59 — LeetCode 11: Container With Most Water
 - [x] Day 60 — LeetCode 17: Letter Combinations of a Phone Number
+- [x] Day 61 — LeetCode 79: Word Search
 
 ## Next
 
-- [ ] Day 61 — LeetCode 79: Word Search
+- [ ] Day 62 — LeetCode 438: Find All Anagrams in a String

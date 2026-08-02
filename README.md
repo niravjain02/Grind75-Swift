@@ -788,3 +788,17 @@ choice. Reaching the end produces one complete combination.
 - Data structure: Digit-to-letters dictionary and character path array
 - Time: `O(n * 4^n)` including construction of the returned strings
 - Space: `O(n)` auxiliary, excluding output
+
+## Day 61: Word Search
+
+Try every cell as the first letter, then use depth-first backtracking through its
+four neighbors. Temporarily mark each selected cell so the current path cannot
+reuse it, restore the cell when backtracking, and succeed once every word letter
+has matched.
+
+- LeetCode: 79
+- Difficulty: Medium
+- Pattern: Grid depth-first search with backtracking
+- Data structure: Mutable board copy and recursion stack
+- Time: `O(m * n * 3^l)` for word length `l`
+- Space: `O(m * n + l)` for the board copy and recursion stack
