@@ -817,3 +817,17 @@ remains unmatched.
 - Data structure: Character-frequency dictionary
 - Time: `O(n + m)`
 - Space: `O(n + k)` for Swift character indexing and `k` pattern characters
+
+## Day 63: Minimum Height Trees
+
+The root of a minimum-height tree must be at the center of the original tree.
+Start with every leaf and remove complete outer layers, decrementing each
+neighbor's degree as its leaves disappear. The final one or two nodes are the
+tree's center or centers.
+
+- LeetCode: 310
+- Difficulty: Medium
+- Pattern: Topological leaf trimming
+- Data structure: Adjacency list, degree array, and leaf arrays
+- Time: `O(n)`
+- Space: `O(n)`
