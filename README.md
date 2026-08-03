@@ -831,3 +831,17 @@ tree's center or centers.
 - Data structure: Adjacency list, degree array, and leaf arrays
 - Time: `O(n)`
 - Space: `O(n)`
+
+## Day 64: Task Scheduler
+
+The most frequent tasks determine the smallest possible schedule frame. Place
+each copy except the last into rows of width `cooldown + 1`, then append every
+task tied for the maximum frequency. If the remaining tasks fill all gaps, the
+task count itself is the tighter bound.
+
+- LeetCode: 621
+- Difficulty: Medium
+- Pattern: Greedy frequency counting
+- Data structure: Task-frequency dictionary
+- Time: `O(t)` for `t` tasks
+- Space: `O(k)` for `k` distinct task types
