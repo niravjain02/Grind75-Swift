@@ -63,7 +63,8 @@
 - [x] Day 59 — LeetCode 11: Container With Most Water
 - [x] Day 60 — LeetCode 17: Letter Combinations of a Phone Number
 - [x] Day 61 — LeetCode 79: Word Search
+- [x] Day 62 — LeetCode 438: Find All Anagrams in a String
 
 ## Next
 
-- [ ] Day 62 — LeetCode 438: Find All Anagrams in a String
+- [ ] Day 63 — LeetCode 310: Minimum Height Trees

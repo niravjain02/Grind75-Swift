@@ -802,3 +802,18 @@ has matched.
 - Data structure: Mutable board copy and recursion stack
 - Time: `O(m * n * 3^l)` for word length `l`
 - Space: `O(m * n + l)` for the board copy and recursion stack
+
+## Day 62: Find All Anagrams in a String
+
+Maintain a fixed-size window equal to the pattern length. A frequency dictionary
+tracks how many copies of each pattern character are still needed, while one
+counter records the total unmatched characters. Add the window's incoming
+character, remove its outgoing character, and record the start whenever nothing
+remains unmatched.
+
+- LeetCode: 438
+- Difficulty: Medium
+- Pattern: Fixed-size sliding window
+- Data structure: Character-frequency dictionary
+- Time: `O(n + m)`
+- Space: `O(n + k)` for Swift character indexing and `k` pattern characters
