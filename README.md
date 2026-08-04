@@ -871,3 +871,16 @@ the kth node is popped instead of traversing the rest of the tree.
 - Data structure: Binary search tree and array-backed stack
 - Time: `O(h + k)` for tree height `h`
 - Space: `O(h)`
+
+## Day 67: Minimum Window Substring
+
+Expand a window until it contains every required target character, including
+duplicates. Then move its left edge forward while it remains valid, recording the
+shortest valid range before expanding again.
+
+- LeetCode: 76
+- Difficulty: Hard
+- Pattern: Variable-size sliding window
+- Data structure: Character-frequency dictionary and character array
+- Time: `O(n + m)`
+- Space: `O(n + k)` for source length `n` and `k` target characters

@@ -68,7 +68,8 @@
 - [x] Day 64 — LeetCode 621: Task Scheduler
 - [x] Day 65 — LeetCode 146: LRU Cache
 - [x] Day 66 — LeetCode 230: Kth Smallest Element in a BST
+- [x] Day 67 — LeetCode 76: Minimum Window Substring
 
 ## Next
 
-- [ ] Day 67 — LeetCode 76: Minimum Window Substring
+- [ ] Day 68 — LeetCode 297: Serialize and Deserialize Binary Tree
