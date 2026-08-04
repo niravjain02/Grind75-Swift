@@ -858,3 +858,16 @@ nodes to the most-recent end and removes the least-recent node without scanning.
 - Data structure: Dictionary and doubly linked list
 - Time: `O(1)` per `get` and `put`
 - Space: `O(capacity)`
+
+## Day 66: Kth Smallest Element in a BST
+
+Traverse the binary search tree in inorder, which visits values from smallest to
+largest. An explicit stack holds the path to the next node; stop immediately when
+the kth node is popped instead of traversing the rest of the tree.
+
+- LeetCode: 230
+- Difficulty: Medium
+- Pattern: Iterative inorder traversal
+- Data structure: Binary search tree and array-backed stack
+- Time: `O(h + k)` for tree height `h`
+- Space: `O(h)`

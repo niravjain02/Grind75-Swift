@@ -67,7 +67,8 @@
 - [x] Day 63 — LeetCode 310: Minimum Height Trees
 - [x] Day 64 — LeetCode 621: Task Scheduler
 - [x] Day 65 — LeetCode 146: LRU Cache
+- [x] Day 66 — LeetCode 230: Kth Smallest Element in a BST
 
 ## Next
 
-- [ ] Day 66 — LeetCode 230: Kth Smallest Element in a BST
+- [ ] Day 67 — LeetCode 76: Minimum Window Substring
