@@ -845,3 +845,16 @@ task count itself is the tighter bound.
 - Data structure: Task-frequency dictionary
 - Time: `O(t)` for `t` tasks
 - Space: `O(k)` for `k` distinct task types
+
+## Day 65: LRU Cache
+
+Combine a dictionary with a doubly linked list ordered from least to most recently
+used. The dictionary locates a key's node immediately, while the list moves accessed
+nodes to the most-recent end and removes the least-recent node without scanning.
+
+- LeetCode: 146
+- Difficulty: Medium
+- Pattern: Hash map plus recency ordering
+- Data structure: Dictionary and doubly linked list
+- Time: `O(1)` per `get` and `put`
+- Space: `O(capacity)`

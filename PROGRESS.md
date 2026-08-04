@@ -66,7 +66,8 @@
 - [x] Day 62 — LeetCode 438: Find All Anagrams in a String
 - [x] Day 63 — LeetCode 310: Minimum Height Trees
 - [x] Day 64 — LeetCode 621: Task Scheduler
+- [x] Day 65 — LeetCode 146: LRU Cache
 
 ## Next
 
-- [ ] Day 65 — LeetCode 146: LRU Cache
+- [ ] Day 66 — LeetCode 230: Kth Smallest Element in a BST
