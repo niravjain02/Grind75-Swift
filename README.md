@@ -76,6 +76,7 @@ Each problem includes:
 | 57 | 62 | Unique Paths | Medium | Grid Dynamic Programming | One-Dimensional Integer Array | `O(m * n)` | `O(min(m, n))` | ✅ Completed |
 | 58 | 105 | Construct Binary Tree from Preorder and Inorder Traversal | Medium | Recursive Traversal Partitioning | Index Dictionary and Binary Tree | `O(n)` | `O(n)` | ✅ Completed |
 | 68 | 297 | Serialize and Deserialize Binary Tree | Hard | Preorder DFS with Null Markers | Token Array and Binary Tree | `O(n)` | `O(n)` | ✅ Completed |
+| 69 | 42 | Trapping Rain Water | Hard | Two Pointers with Running Maxima | Two Integer Indices | `O(n)` | `O(1)` | ✅ Completed |
 
 ## Repository Structure
 
@@ -898,3 +899,17 @@ can consume the tokens in the same order and recursively rebuild each subtree.
 - Data structure: Token array, binary tree, and recursion stack
 - Time: `O(n)`
 - Space: `O(n)`
+
+## Day 69: Trapping Rain Water
+
+Move inward from both ends while tracking the tallest bar seen from each side.
+The shorter current boundary determines the water level on its side because the
+opposite side already supplies a boundary at least as tall. Add the difference
+between that side's running maximum and its current height.
+
+- LeetCode: 42
+- Difficulty: Hard
+- Pattern: Two pointers with running maxima
+- Data structure: Two integer indices and constant integer state
+- Time: `O(n)`
+- Space: `O(1)`
