@@ -71,7 +71,8 @@
 - [x] Day 67 — LeetCode 76: Minimum Window Substring
 - [x] Day 68 — LeetCode 297: Serialize and Deserialize Binary Tree
 - [x] Day 69 — LeetCode 42: Trapping Rain Water
+- [x] Day 70 — LeetCode 295: Find Median from Data Stream
 
 ## Next
 
-- [ ] Day 70 — LeetCode 295: Find Median from Data Stream
+- [ ] Day 71 — LeetCode 127: Word Ladder

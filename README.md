@@ -77,6 +77,7 @@ Each problem includes:
 | 58 | 105 | Construct Binary Tree from Preorder and Inorder Traversal | Medium | Recursive Traversal Partitioning | Index Dictionary and Binary Tree | `O(n)` | `O(n)` | ✅ Completed |
 | 68 | 297 | Serialize and Deserialize Binary Tree | Hard | Preorder DFS with Null Markers | Token Array and Binary Tree | `O(n)` | `O(n)` | ✅ Completed |
 | 69 | 42 | Trapping Rain Water | Hard | Two Pointers with Running Maxima | Two Integer Indices | `O(n)` | `O(1)` | ✅ Completed |
+| 70 | 295 | Find Median from Data Stream | Hard | Two-Heap Balancing | Max-Heap and Min-Heap | `O(log n)` add, `O(1)` median | `O(n)` | ✅ Completed |
 
 ## Repository Structure
 
@@ -913,3 +914,17 @@ between that side's running maximum and its current height.
 - Data structure: Two integer indices and constant integer state
 - Time: `O(n)`
 - Space: `O(1)`
+
+## Day 70: Find Median from Data Stream
+
+Keep the smaller half of the stream in a max-heap and the larger half in a
+min-heap. Rebalance after every insertion so the lower heap has either the same
+number of elements as the upper heap or one extra. The median is then available
+directly from one or both heap roots.
+
+- LeetCode: 295
+- Difficulty: Hard
+- Pattern: Two-heap balancing
+- Data structure: Array-backed max-heap and min-heap
+- Time: `O(log n)` per insertion and `O(1)` per median query
+- Space: `O(n)`
