@@ -69,7 +69,8 @@
 - [x] Day 65 — LeetCode 146: LRU Cache
 - [x] Day 66 — LeetCode 230: Kth Smallest Element in a BST
 - [x] Day 67 — LeetCode 76: Minimum Window Substring
+- [x] Day 68 — LeetCode 297: Serialize and Deserialize Binary Tree
 
 ## Next
 
-- [ ] Day 68 — LeetCode 297: Serialize and Deserialize Binary Tree
+- [ ] Day 69 — LeetCode 42: Trapping Rain Water

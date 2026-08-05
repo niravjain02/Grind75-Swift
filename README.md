@@ -75,6 +75,7 @@ Each problem includes:
 | 56 | 5 | Longest Palindromic Substring | Medium | Expand Around Center | Character Array | `O(n²)` | `O(n)` | ✅ Completed |
 | 57 | 62 | Unique Paths | Medium | Grid Dynamic Programming | One-Dimensional Integer Array | `O(m * n)` | `O(min(m, n))` | ✅ Completed |
 | 58 | 105 | Construct Binary Tree from Preorder and Inorder Traversal | Medium | Recursive Traversal Partitioning | Index Dictionary and Binary Tree | `O(n)` | `O(n)` | ✅ Completed |
+| 68 | 297 | Serialize and Deserialize Binary Tree | Hard | Preorder DFS with Null Markers | Token Array and Binary Tree | `O(n)` | `O(n)` | ✅ Completed |
 
 ## Repository Structure
 
@@ -884,3 +885,16 @@ shortest valid range before expanding again.
 - Data structure: Character-frequency dictionary and character array
 - Time: `O(n + m)`
 - Space: `O(n + k)` for source length `n` and `k` target characters
+
+## Day 68: Serialize and Deserialize Binary Tree
+
+Serialize the tree with preorder depth-first traversal, writing a marker for every
+missing child. Those markers make the representation unambiguous, so deserialization
+can consume the tokens in the same order and recursively rebuild each subtree.
+
+- LeetCode: 297
+- Difficulty: Hard
+- Pattern: Preorder DFS with null markers
+- Data structure: Token array, binary tree, and recursion stack
+- Time: `O(n)`
+- Space: `O(n)`
