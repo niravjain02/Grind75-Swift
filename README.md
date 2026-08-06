@@ -943,3 +943,17 @@ Generate neighbors by replacing each character with every lowercase letter.
 - Data structure: Hash set of unvisited words and array-backed queue
 - Time: `O(n * l * 26)` for `n` words of length `l`
 - Space: `O(n * l)`
+
+## Day 72: Basic Calculator
+
+Scan the expression once while accumulating the current number and applying its
+sign to a running result. When entering parentheses, save the surrounding result
+and sign on a stack; when leaving, combine the completed inner result with that
+saved context.
+
+- LeetCode: 224
+- Difficulty: Hard
+- Pattern: Expression parsing
+- Data structure: Array-backed stack
+- Time: `O(n)`
+- Space: `O(d)` for maximum parenthesis depth `d`

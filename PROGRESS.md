@@ -73,7 +73,8 @@
 - [x] Day 69 — LeetCode 42: Trapping Rain Water
 - [x] Day 70 — LeetCode 295: Find Median from Data Stream
 - [x] Day 71 — LeetCode 127: Word Ladder
+- [x] Day 72 — LeetCode 224: Basic Calculator
 
 ## Next
 
-- [ ] Day 72 — LeetCode 224: Basic Calculator
+- [ ] Day 73 — LeetCode 1235: Maximum Profit in Job Scheduling
