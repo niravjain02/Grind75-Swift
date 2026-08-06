@@ -72,7 +72,8 @@
 - [x] Day 68 — LeetCode 297: Serialize and Deserialize Binary Tree
 - [x] Day 69 — LeetCode 42: Trapping Rain Water
 - [x] Day 70 — LeetCode 295: Find Median from Data Stream
+- [x] Day 71 — LeetCode 127: Word Ladder
 
 ## Next
 
-- [ ] Day 71 — LeetCode 127: Word Ladder
+- [ ] Day 72 — LeetCode 224: Basic Calculator

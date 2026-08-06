@@ -78,6 +78,7 @@ Each problem includes:
 | 68 | 297 | Serialize and Deserialize Binary Tree | Hard | Preorder DFS with Null Markers | Token Array and Binary Tree | `O(n)` | `O(n)` | ✅ Completed |
 | 69 | 42 | Trapping Rain Water | Hard | Two Pointers with Running Maxima | Two Integer Indices | `O(n)` | `O(1)` | ✅ Completed |
 | 70 | 295 | Find Median from Data Stream | Hard | Two-Heap Balancing | Max-Heap and Min-Heap | `O(log n)` add, `O(1)` median | `O(n)` | ✅ Completed |
+| 71 | 127 | Word Ladder | Hard | Breadth-First Search | Hash Set and Array-Backed Queue | `O(n * l * 26)` | `O(n * l)` | ✅ Completed |
 
 ## Repository Structure
 
@@ -928,3 +929,17 @@ directly from one or both heap roots.
 - Data structure: Array-backed max-heap and min-heap
 - Time: `O(log n)` per insertion and `O(1)` per median query
 - Space: `O(n)`
+
+## Day 71: Word Ladder
+
+Treat each dictionary word as a graph node and connect words that differ by one
+letter. Breadth-first search explores transformation sequences in increasing
+length, so the first time it creates the target word is the shortest sequence.
+Generate neighbors by replacing each character with every lowercase letter.
+
+- LeetCode: 127
+- Difficulty: Hard
+- Pattern: Breadth-first search
+- Data structure: Hash set of unvisited words and array-backed queue
+- Time: `O(n * l * 26)` for `n` words of length `l`
+- Space: `O(n * l)`
