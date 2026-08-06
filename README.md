@@ -957,3 +957,17 @@ saved context.
 - Data structure: Array-backed stack
 - Time: `O(n)`
 - Space: `O(d)` for maximum parenthesis depth `d`
+
+## Day 73: Maximum Profit in Job Scheduling
+
+Sort jobs by end time and build a dynamic-programming table whose entries hold
+the best profit available through each sorted job. For every job, binary search
+for the number of earlier jobs ending no later than its start, then choose between
+skipping the job and adding it to that compatible schedule.
+
+- LeetCode: 1235
+- Difficulty: Hard
+- Pattern: Weighted interval scheduling with dynamic programming and binary search
+- Data structure: Sorted job array and dynamic-programming array
+- Time: `O(n log n)`
+- Space: `O(n)`

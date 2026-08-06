@@ -74,7 +74,8 @@
 - [x] Day 70 — LeetCode 295: Find Median from Data Stream
 - [x] Day 71 — LeetCode 127: Word Ladder
 - [x] Day 72 — LeetCode 224: Basic Calculator
+- [x] Day 73 — LeetCode 1235: Maximum Profit in Job Scheduling
 
 ## Next
 
-- [ ] Day 73 — LeetCode 1235: Maximum Profit in Job Scheduling
+- [ ] Day 74 — LeetCode 23: Merge k Sorted Lists
