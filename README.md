@@ -984,3 +984,17 @@ The heap therefore holds at most one candidate from each input list.
 - Data structure: Binary min-heap and singly linked lists
 - Time: `O(n log k)` for `n` total nodes across `k` lists
 - Space: `O(k)`
+
+## Day 75: Largest Rectangle in Histogram
+
+Keep indices of bars in nondecreasing height order. When a shorter bar arrives,
+pop each taller bar and use the new stack top and current index as the first
+smaller boundaries on its left and right. A final zero-height sentinel closes
+every rectangle that reaches the end.
+
+- LeetCode: 84
+- Difficulty: Hard
+- Pattern: Monotonic stack
+- Data structure: Array-backed stack of indices
+- Time: `O(n)`
+- Space: `O(n)`

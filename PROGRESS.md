@@ -76,7 +76,8 @@
 - [x] Day 72 — LeetCode 224: Basic Calculator
 - [x] Day 73 — LeetCode 1235: Maximum Profit in Job Scheduling
 - [x] Day 74 — LeetCode 23: Merge k Sorted Lists
+- [x] Day 75 — LeetCode 84: Largest Rectangle in Histogram
 
 ## Next
 
-- [ ] Day 75 — LeetCode 84: Largest Rectangle in Histogram
+All 75 problems are complete.
