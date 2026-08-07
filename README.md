@@ -971,3 +971,16 @@ skipping the job and adding it to that compatible schedule.
 - Data structure: Sorted job array and dynamic-programming array
 - Time: `O(n log n)`
 - Space: `O(n)`
+
+## Day 74: Merge k Sorted Lists
+
+Put the head of each nonempty sorted list into a min-heap. Repeatedly remove the
+smallest node, append it to the result, and add that node's successor to the heap.
+The heap therefore holds at most one candidate from each input list.
+
+- LeetCode: 23
+- Difficulty: Hard
+- Pattern: K-way merge
+- Data structure: Binary min-heap and singly linked lists
+- Time: `O(n log k)` for `n` total nodes across `k` lists
+- Space: `O(k)`

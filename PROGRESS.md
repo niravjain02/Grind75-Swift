@@ -75,7 +75,8 @@
 - [x] Day 71 — LeetCode 127: Word Ladder
 - [x] Day 72 — LeetCode 224: Basic Calculator
 - [x] Day 73 — LeetCode 1235: Maximum Profit in Job Scheduling
+- [x] Day 74 — LeetCode 23: Merge k Sorted Lists
 
 ## Next
 
-- [ ] Day 74 — LeetCode 23: Merge k Sorted Lists
+- [ ] Day 75 — LeetCode 84: Largest Rectangle in Histogram
